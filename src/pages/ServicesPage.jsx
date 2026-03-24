@@ -9,7 +9,7 @@ import bg_all from "../assets/hero_svg.jpg";
 const ServicesPages = () => {
   return (
     <>
-      <HeroImageSection title="Our Services" heroImage={bg_all}/>
+      <HeroImageSection title="Our Services" heroImage={bg_all} />
 
       <section className="bg-white px-5 sm:px-8 lg:px-[100px] py-10 md:py-14">
         {/* Top section */}
@@ -24,14 +24,19 @@ const ServicesPages = () => {
                 We're among the largest EPC contractor in the country that
                 delivers high-performance On-Grid, Off-Grid, and Hybrid solar
                 systems. With 150+ MWp installed capacity and 70+ satisfied
-                clients, we don't just install solar - we power long-term,
+                clients, we don’t just install solar - we power long-term,
                 sustainable energy solutions.
               </p>
 
-              <ul className="list-disc pl-6 mt-4 space-y-2">
-                <li>On-Grid Solar Power Solutions</li>
-                <li>Off-Grid & Hybrid Solar Solutions</li>
-                <li>Solar Operation & Maintenance (O&amp;M)</li>
+              <p className="mt-4 font-medium text-gray-700">
+                Our services include:
+              </p>
+
+              <ul className="list-disc pl-6 mt-2 space-y-2">
+                <li>On-grid Solar Solutions</li>
+                <li>Off-grid Solar Solution</li>
+                <li>Hybrid Solar Solutions</li>
+                <li>Operation & Maintenance</li>
                 <li>Solar Structure Manufacturing</li>
               </ul>
 
@@ -49,9 +54,9 @@ const ServicesPages = () => {
                 src={solarModel}
                 alt="solar model"
                 className="w-full max-w-[400px] sm:max-w-[480px] md:max-w-[550px] object-contain
-                transition-all duration-300 ease-out
-                group-hover:-translate-y-3 group-hover:scale-[1.04]
-                group-hover:drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)]"
+        transition-all duration-300 ease-out
+        group-hover:-translate-y-3 group-hover:scale-[1.04]
+        group-hover:drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)]"
               />
             </div>
           </div>
