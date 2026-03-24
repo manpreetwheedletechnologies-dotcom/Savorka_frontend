@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,14 +15,14 @@
   }
 
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Manrope;
     color: #333;
     /* background-color: hsl(0, 15%, 81%); */
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Manrope;
   }
 }
 
@@ -132,4 +132,81 @@
 ::-webkit-scrollbar-thumb {
   background: #2d7a27;
   border-radius: 3px;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes purposeDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-55px) scale(0.94);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(8px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes popupIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+.custom-bot-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-bot-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-bot-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+}
+
+.custom-bot-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.45) transparent;
+}
+
+
+.custom-bot-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-bot-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-bot-scroll::-webkit-scrollbar-thumb {
+  background: rgba(90, 120, 160, 0.35);
+  border-radius: 999px;
+}
+
+.custom-bot-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(90, 120, 160, 0.35) transparent;
 }

@@ -1,215 +1,112 @@
-import React, { useState } from "react";
-import ContactFormSection from "../components/ContactFormSection";
-import { AboutHero } from "../pages/AboutPage";
-import blurimg from "../assets/blurserviceimg.png";
-import namesimg from "../assets/nameimg.png";
-
+import React from "react";
+import { Link } from "react-router-dom";
 import solarModel from "../assets/savorkarenewable.png";
-import service1 from "../assets/serviceimg1.png";
-import service2 from "../assets/serviceimg1.png";
-import service3 from "../assets/serviceimg1.png";
-import service4 from "../assets/serviceimg1.png";
+import blurimg from "../assets/blurserviceimg.png";
+import HeroImageSection from "../components/HeroImageSection";
+import servicesData from "../data/servicesData";
+import bg_all from "../assets/hero_svg.jpg";
 
-
-/* ─── Services Section ─── */
-const ServicesSection = () => {
-  const services = [
-    {
-      img: service1,
-      title: "Efficient On-Grid Solar Power Solutions",
-      desc: "Cost-effective on-grid solar systems designed to reduce electricity bills and maximize returns through seamless grid integration.",
-    },
-    {
-      img: service2,
-      title: "Efficient Off-Grid & Hybrid Solar Solutions",
-      desc: "Reliable solar power solutions with battery backup for locations with limited or unstable grid availability.",
-    },
-    {
-      img: service3,
-      title: "Solar Operation & Maintenance (O&M)",
-      desc: "Professional O&M services to ensure consistent performance, maximum energy generation, and extended system life.",
-    },
-    {
-      img: service4,
-      title: "Solar Structure Manufacturing",
-      desc: "Durable and precision-engineered solar mounting structures for rooftop and ground-mounted solar projects.",
-    },
-  ];
-
+const ServicesPages = () => {
   return (
-    <section style={s.wrapper}>
-      {/* Top — heading left, image right */}
-      <div style={s.topRow}>
-        <div style={s.topLeft}>
-          <h2 style={s.heading}>Our Services</h2>
-          <p style={s.desc}>
-            We are among the largest EPC contractor in the country
-            that delivers high-performance On-Grid, Off-Grid, and 
-            Hybrid solar systems. With 150+ MWp installed capacity and
-            70+ satisfied clients, we don't just install solar – we power
-            long-term, sustainable energy solutions.
-          </p>
-        </div>
-        <div style={s.topRight}>
-          <img src={solarModel} alt="solar model" style={s.heroImg} />
-        </div>
-      </div>
+    <>
+      <HeroImageSection title="Our Services" heroImage={bg_all}/>
 
-      {/* 2×2 Service Cards */}
-      <div style={s.grid}>
-        {services.map((svc, i) => (
-          <div key={i} style={s.card}>
-            <img src={svc.img} alt={svc.title} style={s.cardImg} />
-            <div style={s.cardBody}>
-              <h3 style={s.cardTitle}>{svc.title}</h3>
-              <p style={s.cardDesc}>{svc.desc}</p>
+      <section className="bg-white px-5 sm:px-8 lg:px-[100px] py-10 md:py-14">
+        {/* Top section */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mb-10 md:mb-14">
+          <div className="flex-1 max-w-[650px]">
+            <h2 className="text-[#1a7a3c] font-semibold text-[28px] sm:text-[34px] md:text-[40px] mb-4">
+              Our Services
+            </h2>
+
+            <div className="text-gray-600 leading-relaxed text-[15px] sm:text-[16px] md:text-[17px]">
+              <p>
+                We're among the largest EPC contractor in the country that
+                delivers high-performance On-Grid, Off-Grid, and Hybrid solar
+                systems. With 150+ MWp installed capacity and 70+ satisfied
+                clients, we don't just install solar - we power long-term,
+                sustainable energy solutions.
+              </p>
+
+              <ul className="list-disc pl-6 mt-4 space-y-2">
+                <li>On-Grid Solar Power Solutions</li>
+                <li>Off-Grid & Hybrid Solar Solutions</li>
+                <li>Solar Operation & Maintenance (O&amp;M)</li>
+                <li>Solar Structure Manufacturing</li>
+              </ul>
+
+              <p className="mt-4">
+                We partner closely with our customers to build long-lasting
+                relationships and energy solutions designed to perform for 25
+                years and beyond.
+              </p>
             </div>
           </div>
-        ))}
-      </div>
 
-    </section>
+          <div className="flex-1 flex justify-center lg:justify-end">
+            <div className="group transition-all duration-300 ease-out">
+              <img
+                src={solarModel}
+                alt="solar model"
+                className="w-full max-w-[400px] sm:max-w-[480px] md:max-w-[550px] object-contain
+                transition-all duration-300 ease-out
+                group-hover:-translate-y-3 group-hover:scale-[1.04]
+                group-hover:drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)]"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          {servicesData.map((service) => (
+            <Link
+              to={`/services/${service.slug}`}
+              key={service.id}
+              className="group bg-white rounded-[18px] overflow-hidden
+              shadow-[0_4px_14px_rgba(0,0,0,0.08)]
+              transition-all duration-300 ease-out
+              hover:-translate-y-2 hover:shadow-[0_16px_30px_rgba(0,0,0,0.14)]"
+            >
+              <div className="overflow-hidden">
+                <img
+                  src={service.cardImg}
+                  alt={service.cardTitle}
+                  className="w-full h-[180px] sm:h-[190px] md:h-[200px] object-cover
+                  transition-transform duration-500 ease-out
+                  group-hover:scale-[1.04]"
+                />
+              </div>
+
+              <div className="p-4 sm:p-5">
+                <h3 className="text-gray-900 font-bold text-[16px] sm:text-[17px] mb-2 leading-snug">
+                  {service.cardTitle}
+                </h3>
+
+                <h4 className="text-gray-700 text-[13px] sm:text-[14px] font-medium mb-2">
+                  {service.cardSubtitle}
+                </h4>
+
+                <p className="text-gray-500 text-[13px] sm:text-[14px] leading-relaxed line-clamp-4">
+                  {service.cardDesc}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <BlurImage />
+    </>
   );
-};
-const blurImgStyle = {
-  width: "100%",
-  height: "auto",
-  opacity: 1
 };
 
 export function BlurImage() {
   return (
     <div>
-      <img src={blurimg} alt="Blur" style={blurImgStyle} />
-    </div>
-
-  );
-}
-const namesImgStyle = {
-  width: "80%",
-  height: "auto",
-  opacity: 1
-};
-
-const containerStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center"
-};
-
-function NameImage() {
-  return (
-    <div style={containerStyle}>
-      <img src={namesimg} alt="nameimg" style={namesImgStyle} />
+      <img src={blurimg} alt="Blur" className="w-full h-auto opacity-100" />
     </div>
   );
 }
 
-/* ─── Styles ─── */
-const s = {
-  wrapper: {
-    background: "#f4f6f0",
-    padding: "2px 5%", // reduced horizontal padding for small devices
-    fontFamily: "'Monorope', sans-serif",
-  },
-  topRow: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    flexWrap: "wrap",
-    marginBottom: "18px",
-    gap: "24px",
-  },
-  topLeft: {
-    flex: "1 1 320px",
-    maxWidth: "600px",
-  },
-  topRight: {
-    flex: "1 1 280px",
-    display: "flex",
-    justifyContent: "center",
-  },
-  heading: {
-    fontSize: "clamp(24px, 4vw, 32px)", // responsive font size
-    fontWeight: "600",
-    color: "#1a7a3c",
-    marginBottom: "16px",
-    lineHeight: 1,
-  },
-  desc: {
-    fontSize: "clamp(14px, 2.5vw, 16px)", // responsive font
-    color: "#555",
-    lineHeight: "1.7",
-  },
-  heroImg: {
-    width: "100%",
-    maxWidth: "400px",
-    height: "auto",
-    objectFit: "contain",
-  },
-cardImgWrapper: {
-  padding: "0 20px",  
-},
-grid: {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)",
-  gap: "30px",
-},
-
-card: {
-  background: "#fff",
-  borderRadius: "12px",
-  padding: "12px",
-  boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
-  textAlign: "center",
-},
-
-cardImg: {
-  width: "100%",
-  height: "140px",
-  objectFit: "cover",
-  borderRadius: "8px",
-},
-// cardImg: {
-//   width: "100%",
-//   height: "180px",
-//   objectFit: "cover",
-//   display: "block",
-//   borderRadius: "16px 16px 0 0",
-// },
-  cardBody: {
-    padding: "18px 20px 22px",
-    textAlign: "center",
-  },
-  cardTitle: {
-    fontSize: "clamp(14px, 2vw, 15px)",
-    fontWeight: "700",
-    color: "#222",
-    marginBottom: "8px",
-  },
-  cardDesc: {
-    fontSize: "clamp(13px, 1.8vw, 15px)",
-    color: "#6b7280",
-    lineHeight: "1.6",
-    margin: 0,
-  },
-
-
-};
-
-
-
-/* ─── Page ─── */
-const ServicesPage = () => {
-  return (
-    <main>
-      <AboutHero />
-      <ServicesSection />
-        <BlurImage />
-        <NameImage />
-      <ContactFormSection />
-    </main>
-  );
-};
-
-export default ServicesPage;
+export default ServicesPages;

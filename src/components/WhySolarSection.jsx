@@ -2,162 +2,109 @@ import React from "react";
 import towerImg from "../assets/towerimg.png";
 
 const WhySolarSection = () => {
-  const lightCard = {
-    background: "#c7c8b5",
-    borderRadius: "20px",
-    padding: "30px",
-    textAlign: "center",
-    minHeight: "260px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  };
-
-  const greenCard = {
-    background: "#8cc63f",
-    borderRadius: "20px",
-    padding: "30px",
-    textAlign: "center",
-    color: "white",
-    minHeight: "210px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  };
-
-  const darkGreenCard = {
-    background: "#3e8e1c",
-    borderRadius: "20px",
-    padding: "30px",
-    textAlign: "center",
-    color: "white",
-    minHeight: "210px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-  };
-
   return (
-    <section style={{ background: "#f2f2ea", padding: "clamp(40px, 6vw, 70px) clamp(20px, 4vw, 60px)" }}>
-      <div style={{ maxWidth: "1300px", margin: "auto" }}>
-        
-        {/* TOP ROW */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "clamp(20px, 4vw, 30px)",
-            alignItems: "center",
-            marginBottom: "30px",
-          }}
-        >
-          {/* Strong Brand */}
-          <div style={lightCard}>
-            <h3 style={{ marginBottom: "15px" }}>Strong Brand Image</h3>
-            <p style={{ fontSize: "14px", lineHeight: "22px" }}>
-              Switching to solar showcases your commitment to sustainability
-              and environmental responsibility. It builds trust with clients,
-              investors, and partners who value green initiatives.
+    <section className=" px-6 py-14 md:px-12 lg:px-16">
+<div className="mx-auto">
+
+        {/* TOP ROW — center bigger, side cards same size */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-stretch mb-6">
+
+          {/* Strong Brand Image — side card */}
+          <div className="bg-[#dde3d0] rounded-3xl px-8 py-10 flex flex-col items-center justify-center text-center
+            transition-all duration-300 ease-out
+            hover:-translate-y-2 hover:shadow-xl hover:shadow-black-200/60 hover:bg-[#ccd4bc] cursor-pointer">
+            <h3 className="text-[17px] font-semibold text-[#2d2d2d] mb-4">
+              Lower Energy Expenses
+            </h3>
+            <p className="text-[13.5px] leading-[1.75] text-[#444] max-w-[330px]">
+             Generate your own clean power and reduce dependence on expensive grid electricity. Solar significantly lowers monthly energy bills for businesses, homes, and residential communities.
             </p>
           </div>
 
-          {/* CENTER IMAGE */}
-          <div style={{ textAlign: "center" }}>
+          {/* CENTER: Title + Image — bigger */}
+          <div className="flex flex-col items-center justify-center text-center py-6 scale-105 origin-center
+            transition-all duration-300 ease-out hover:scale-110 cursor-pointer group">
             <h2
+              className="text-[#2e7d32] font-bold mb-5 transition-colors duration-300 group-hover:text-[#1a5c1a]"
               style={{
-                color: "#0c5c13",
-                fontSize: "36px",
-                marginBottom: "20px",
-                fontWeight: "700",
+                fontSize: "clamp(28px, 4.5vw, 44px)",
               }}
             >
               Why go SOLAR?
             </h2>
-
             <img
               src={towerImg}
-              alt="solar"
-              style={{ width: "100%", maxWidth: "420px" }}
+              alt="solar panel illustration"
+              className="w-full max-w-[520px] transition-transform duration-300 group-hover:scale-105"
             />
           </div>
 
-          {/* Subsidy */}
-          <div style={lightCard}>
-            <h3 style={{ marginBottom: "15px" }}>Subsidy & Tax Benefits</h3>
-            <p style={{ fontSize: "14px", lineHeight: "22px" }}>
-              Many governments offer subsidies, tax credits, and financial
-              incentives for solar adoption. These benefits reduce upfront
-              costs and improve overall return on investment.
+          {/* Subsidy & Tax Benefits — side card */}
+          <div className="bg-[#dde3d0] rounded-3xl px-8 py-10 flex flex-col items-center justify-center text-center
+            transition-all duration-300 ease-out
+            hover:-translate-y-2 hover:shadow-xl hover:shadow-black-200/60 hover:bg-[#ccd4bc] cursor-pointer">
+            <h3 className="text-[17px] font-semibold text-[#2d2d2d] mb-4">
+              Faster ROI & Long-Term Savings
+            </h3>
+            <p className="text-[13.5px] leading-[1.75] text-[#444] max-w-[330px]">
+              Optimized system design and efficient installation ensure quicker payback and decades of consistent savings on energy expenses.
             </p>
           </div>
         </div>
 
-        {/* BOTTOM ROW */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "clamp(15px, 3vw, 30px)",
-          }}
-        >
-          <div style={greenCard}>
-            <h3>Save on Electricity Bills</h3>
-            <p style={{ fontSize: "14px", marginTop: "10px" }}>
-              Solar panels generate your own electricity, significantly
-              reducing monthly power expenses. Over time, the savings can
-              outweigh the initial installation cost.
+        {/* BOTTOM ROW — outer cards TALL, inner two cards SMALL */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 items-stretch">
+
+          {/* Save on Electricity Bills — light green, TALL */}
+          <div className="bg-[#8cc63f] rounded-3xl px-7 py-10 flex flex-col justify-start
+            transition-all duration-300 ease-out
+            hover:-translate-y-2 hover:shadow-xl hover:shadow-black-400/50 hover:bg-[#7db835] cursor-pointer">
+            <h3 className="text-[17px] font-semibold text-white mb-3">
+              Government Incentives & Tax Benefits
+            </h3>
+            <p className="text-[13px] leading-[1.7] text-white">
+              Benefit from subsidies, tax credits, and policy incentives that reduce upfront investment and improve overall project affordability.
             </p>
           </div>
 
-          <div style={darkGreenCard}>
-            <h3>Eco-Friendly Energy Source</h3>
-            <p style={{ fontSize: "14px", marginTop: "10px" }}>
-              Quick payback period of 3–4 years guaranteed, with pure profit
-              following thereafter.
+          {/* Eco-Friendly Energy Source — dark green, SMALL */}
+          <div className="bg-[#4a8f2a] rounded-3xl px-7 py-9 flex flex-col justify-center scale-90 origin-center
+            transition-all duration-300 ease-out
+            hover:scale-95 hover:shadow-xl hover:shadow-black-700/40 hover:bg-[#3d7a22] cursor-pointer">
+            <h3 className="text-[17px] font-semibold text-white mb-3">
+             Sustainable & Eco-Friendly Power
+            </h3>
+            <p className="text-[13px] leading-[1.7] text-white">
+              Solar power reduces carbon emissions and supports environmental responsibility for organizations, households, and communities alike.
             </p>
           </div>
 
-          <div style={darkGreenCard}>
-            <h3>Energy Independence</h3>
-            <p style={{ fontSize: "14px", marginTop: "10px" }}>
-              Durable precision-engineered solar mounting structures for
-              rooftop and ground projects.
+          {/* Energy Independence — dark green, SMALL */}
+          <div className="bg-[#4a8f2a] rounded-3xl px-7 py-9 flex flex-col justify-center scale-90 origin-center
+            transition-all duration-300 ease-out
+            hover:scale-95 hover:shadow-xl hover:shadow-black-700/40 hover:bg-[#3d7a22] cursor-pointer">
+            <h3 className="text-[17px] font-semibold text-white mb-3">
+              Energy Independence & Reliability
+            </h3>
+            <p className="text-[13px] leading-[1.7] text-white">
+              Minimize power cuts and protect against rising utility tariffs with dependable on-site solar generation.
             </p>
           </div>
 
-          <div style={greenCard}>
-            <h3>Increase Property Value</h3>
-            <p style={{ fontSize: "14px", marginTop: "10px" }}>
-              Properties with solar installations are more attractive to buyers
-              and tenants. Lower energy costs and sustainable infrastructure
-              increase resale value and market demand.
+          {/* Increase Property Value — light green, TALL */}
+          <div className="bg-[#8cc63f] rounded-3xl px-7 py-10 flex flex-col justify-start
+            transition-all duration-300 ease-out
+            hover:-translate-y-2 hover:shadow-xl hover:shadow-black-400/50 hover:bg-[#7db835] cursor-pointer">
+            <h3 className="text-[17px] font-semibold text-white mb-3">
+              Higher Property & Asset Value
+            </h3>
+            <p className="text-[13px] leading-[1.7] text-white">
+             Solar-enabled buildings attract buyers, tenants, and investors with lower operating costs and future-ready sustainable infrastructure.
             </p>
           </div>
         </div>
+
       </div>
-
-      {/* Responsive */}
-      <style>{`
-        @media (max-width: 1024px) {
-
-          section div div:first-child {
-            grid-template-columns: 1fr;
-          }
-
-          section div div:last-child {
-            grid-template-columns: 1fr 1fr;
-          }
-
-        }
-
-        @media (max-width: 600px) {
-
-          section div div:last-child {
-            grid-template-columns: 1fr;
-          }
-
-        }
-      `}</style>
     </section>
   );
 };

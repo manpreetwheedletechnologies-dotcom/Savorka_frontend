@@ -10,12 +10,27 @@ const STATS = [
   { label: "Years of Excellence", value: 9, suffix: "+" },
 ];
 
+// Green gradient matching the SVG leaf/brand gradient
+const GREEN_GRADIENT = "linear-gradient(135deg, #D2FF5D 0%, #8FCC36 25%, #5BA419 46%, #3C8C06 62%, #308300 100%)";
+
 const GoGreenSection = () => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
   const [counts, setCounts] = useState([0, 0, 0, 0]);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
-  // Intersection animation trigger
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -28,7 +43,6 @@ const GoGreenSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Count up animation
   useEffect(() => {
     if (!visible) return;
 
@@ -36,10 +50,11 @@ const GoGreenSection = () => {
       let start = 0;
       const end = stat.value;
       const duration = 1200;
-      const stepTime = Math.abs(Math.floor(duration / end));
+      const stepTime = duration / end;
 
       const timer = setInterval(() => {
         start += 1;
+
         setCounts((prev) => {
           const updated = [...prev];
           updated[i] = start;
@@ -55,9 +70,9 @@ const GoGreenSection = () => {
     <section
       ref={ref}
       style={{
-        background: "#e8e6de",
-        padding: "clamp(40px, 6vw, 90px) clamp(20px, 4vw, 40px)",
-        overflow: "hidden",
+        padding: isMobile ? "48px 20px" : "72px 40px",
+        background: "#ffffff",
+        fontFamily: "'Montserrat', sans-serif",
       }}
     >
       <div
@@ -66,115 +81,112 @@ const GoGreenSection = () => {
           margin: "auto",
           display: "flex",
           alignItems: "center",
-          gap: "clamp(30px, 5vw, 60px)",
+          gap: "60px",
           flexWrap: "wrap",
         }}
       >
-        {/* LEFT LEAF */}
+        {/* LEFT — Leaf image */}
         <div
           style={{
-            flex: "1 1 350px",
-            maxWidth: "420px",
-            textAlign: "center",
+            flex: "1 1 420px",
+            display: "flex",
+            justifyContent: "center",
           }}
         >
           <img
             src={leafImage}
-            alt="Green Leaf"
+            alt="Leaf"
             style={{
-              width: "100%",
-              maxWidth: "420px",
-              filter: "drop-shadow(0 15px 20px rgba(0,0,0,0.15))",
+              width: isMobile ? "80%" : "90%",
+              margin: isMobile ? "0 auto" : "0 0 0 350px",
             }}
           />
         </div>
 
-        {/* RIGHT CONTENT */}
+        {/* RIGHT — Content */}
         <div
           style={{
-            flex: 1,
+            flex: "1 1 500px",
             position: "relative",
-            minWidth: "320px",
           }}
         >
-          {/* Solar Panels */}
-          <div
+          {/* Solar Panels decoration */}
+          <img
+            src={solarPanelsImage}
+            alt="Solar Panels"
             style={{
               position: "absolute",
-              top: "-60px",
-              right: "10px",
-              width: "200px",
+              right: isMobile ? "20px" : isTablet ? "120px" : "250px",
+              top: isMobile ? "-40px" : "-100px",
+              width: isMobile ? "90px" : "150px",
             }}
-          >
-            <img
-              src={solarPanelsImage}
-              alt="Solar Panels"
-              style={{
-                width: "100%",
-                objectFit: "contain",
-              }}
-            />
-          </div>
+          />
 
-          {/* Heading */}
-          <div
-            style={{
-              marginBottom: "40px",
-            }}
-          >
+          {/* Go Green Go Savorka heading image */}
+          <div style={{ marginBottom: "40px" }}>
             <img
               src={goGreenImage}
               alt="Go Green Go Savorka"
               style={{
                 width: "100%",
-                maxWidth: "430px",
+                maxWidth: "420px",
+                margin: isMobile ? "0 auto" : "0 0 -10px -60px",
+                display: "block",
               }}
             />
           </div>
 
-          {/* STATS GRID */}
+          {/* Stats grid */}
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-              gap: "clamp(15px, 3vw, 20px)",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
+              gap: "18px",
+              maxWidth: "420px",
             }}
           >
             {STATS.map((stat, i) => (
               <div
                 key={i}
                 style={{
-                  background: "#f2f2f2",
-                  borderRadius: "12px",
-                  padding: "20px",
+                  background: "#ffffff",
+                  borderRadius: "18px",
                   textAlign: "center",
-                  boxShadow: "0 6px 12px rgba(0,0,0,0.15)",
+                  boxShadow: "0 4px 18px rgba(0, 49, 94, 0.18)",
+                  padding: "22px 18px",
                   opacity: visible ? 1 : 0,
-                  transform: visible
-                    ? "translateY(0)"
-                    : "translateY(20px)",
+                  transform: visible ? "translateY(0)" : "translateY(20px)",
                   transition: `all 0.6s ease ${i * 0.1}s`,
+                  border: "none",
                 }}
               >
+                {/* Stat label — navy #00315E */}
                 <p
                   style={{
-                    fontFamily: "Montserrat",
-                    fontSize: "16px",
-                    color: "#143a5c",
-                    marginBottom: "6px",
-                    fontWeight: "500",
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontSize: "13px",
+                    letterSpacing: "0.02em",
+                    color: "#00315E",
+                    marginBottom: "8px",
+                    fontWeight: 600,
+                    margin: "0 0 8px 0",
                   }}
                 >
                   {stat.label}
                 </p>
 
+                {/* Stat number — large, green gradient text */}
                 <p
                   style={{
-                    fontFamily: "Montserrat",
-                    fontSize: "34px",
-                    fontWeight: "800",
-                    color: "#143a5c",
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontSize: "32px",
+                    fontWeight: 800,
                     margin: 0,
+                    // Green gradient text matching the SVG brand gradient
+                    background: GREEN_GRADIENT,
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
                   }}
                 >
                   {counts[i]}

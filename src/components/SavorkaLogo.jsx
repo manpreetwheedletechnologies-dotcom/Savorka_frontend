@@ -7,7 +7,7 @@ const SavorkaLogo = ({ light = false }) => {
       <div className="relative w-10 h-10 flex-shrink-0">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
           <circle cx="20" cy="20" r="20" fill="url(#logoGrad)" />
-          <text x="20" y="27" textAnchor="middle" fontSize="22" fontWeight="900" fontFamily="Montserrat, sans-serif" fill="white">S</text>
+          <text x="20" y="27" textAnchor="middle" fontSize="22" fontWeight="900" fontFamily="Montserrat, Manrope" fill="white">S</text>
           <defs>
             <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stopColor="#76c442" />

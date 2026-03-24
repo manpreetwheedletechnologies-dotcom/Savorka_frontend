@@ -10,7 +10,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const TopBar = () => {
   return (
-    <div className="bg-dark text-white px-6 md:px-16 py-2 flex justify-between items-center text-sm">
+    <div className="bg-dark text-white px-6 md:px-[5%] py-2 flex justify-between items-center text-sm">
       <a href="mailto:info@savorka.in" className="topbar-link flex items-center gap-2">
         <FaEnvelope className="text-xs" />
         info@savorka.in

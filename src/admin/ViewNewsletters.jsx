@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
-import API from "../api/axios";
+import API_BASE_URL from "../config/api";
 
 const ViewNewsletters = ({ goBack }) => {
   const [newsletters, setNewsletters] = useState([]);
 
   const fetchNewsletters = async () => {
-    const res = await API.get("/newsletters");
-    setNewsletters(res.data);
+    const res = await fetch(`${API_BASE_URL}/newsletters`);
+const data = await res.json();
+setNewsletters(data);
   };
-
+  
   useEffect(() => {
     fetchNewsletters();
   }, []);
@@ -18,14 +19,22 @@ const ViewNewsletters = ({ goBack }) => {
 
     if (!confirmDelete) return;
 
-    await API.delete(`/newsletters/${id}`);
+   await fetch(`${API_BASE_URL}/newsletters/${id}`, {
+  method: "DELETE",
+});
 
     setNewsletters(newsletters.filter((n) => n._id !== id));
   };
 
   const updateStatus = async (id, status) => {
     try {
-      await API.patch(`/newsletters/${id}/status`, { status });
+      await fetch(`${API_BASE_URL}/newsletters/${id}/status`, {
+  method: "PATCH",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ status }),
+});
 
       setNewsletters((prev) =>
         prev.map((n) => (n._id === id ? { ...n, status } : n)),

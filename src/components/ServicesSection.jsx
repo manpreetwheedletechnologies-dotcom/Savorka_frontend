@@ -1,9 +1,10 @@
- 
 import React from "react";
 import serviceimg1 from "../assets/serviceimg1.png";
 import serviceimg2 from "../assets/serviceimg2.png";
 import serviceimg3 from "../assets/serviceimg3.png";
 import serviceimg4 from "../assets/serviceimg4.png";
+import bg from "../assets/ser_bg.png"
+
 const SERVICES = [
   {
     img: serviceimg1,
@@ -26,15 +27,15 @@ const SERVICES = [
     desc: "Reliable solar power with battery backup for unstable or limited grid areas.",
   },
 ];
- 
-const ServiceCard = ({ img, title, desc, radius }) => (
+
+const ServiceCard = ({ img, title, desc, radius, imgRadius = "12px" }) => (
   <div
     style={{
       background: "#fff",
       borderRadius: radius,
-      overflow: "hidden",
       boxShadow: "0 12px 30px rgba(0,0,0,0.12)",
       transition: "all 0.35s ease",
+      padding: "16px",
     }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = "translateY(-8px)";
@@ -45,20 +46,22 @@ const ServiceCard = ({ img, title, desc, radius }) => (
       e.currentTarget.style.boxShadow = "0 12px 30px rgba(0,0,0,0.12)";
     }}
   >
+    {/* Image sits inside padding, gets its own inner radius */}
     <img
       src={img}
       alt={title}
       style={{
         width: "100%",
-        height: "180px",
+        height: "200px",
         objectFit: "cover",
+        borderRadius: imgRadius,
+        display: "block",
       }}
     />
- 
-    <div style={{ padding: "22px", textAlign: "center" }}>
+
+    <div style={{ padding: "18px 8px 8px", textAlign: "center" }}>
       <h3
         style={{
-          fontFamily: "Montserrat",
           fontWeight: "700",
           fontSize: "16px",
           color: "#0d2137",
@@ -67,12 +70,12 @@ const ServiceCard = ({ img, title, desc, radius }) => (
       >
         {title}
       </h3>
- 
       <p
         style={{
           fontSize: "13px",
           color: "#6b6b6b",
           lineHeight: "1.6",
+          margin: 0,
         }}
       >
         {desc}
@@ -80,7 +83,7 @@ const ServiceCard = ({ img, title, desc, radius }) => (
     </div>
   </div>
 );
- 
+
 const ServicesSection = () => {
   return (
     <section
@@ -88,28 +91,24 @@ const ServicesSection = () => {
       style={{
         position: "relative",
         padding: "clamp(60px, 8vw, 120px) 20px",
-        background:
-          "linear-gradient(to bottom, #e8e5de 15%, #dce8c4 45%)",
         overflow: "hidden",
       }}
     >
-      {/* Solar background */}
+      {/* Background */}
       <div
-        style={{
-          position: "absolute",
-          right: 0,
-          bottom: 0,
-          width: "100%",
-          height: "70%",
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          opacity: 0.35,
-        }}
+style={{
+  position: "absolute",
+  right: 0,
+  bottom: 80,
+  width: "100%",
+  height: "60%",
+  backgroundImage: `url(${bg}`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  opacity: 0.8,
+}}
       />
- 
-      {/* Cards */}
+
       <div
         style={{
           maxWidth: "900px",
@@ -118,41 +117,54 @@ const ServicesSection = () => {
           zIndex: 2,
         }}
       >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, minmax(280px, 1fr))",
-            gap: "clamp(20px, 4vw, 30px)",
-          }}
-        >
-          {/* Card 1 */}
-          <ServiceCard
-            {...SERVICES[0]}
-            radius="20px"
-          />
- 
-          {/* Card 2 (top right large rounded corner) */}
+        <div className="servicesGrid">
+          {/* First card — smaller, scaled down, anchored top-left */}
+          <div style={{ transform: "scale(0.85)", transformOrigin: "bottom right" }}>
+            <ServiceCard
+              {...SERVICES[0]}
+              radius="20px"
+              imgRadius="8px"
+            />
+          </div>
+
           <ServiceCard
             {...SERVICES[1]}
             radius="80px 20px 20px 20px"
+            imgRadius="64px 8px 8px 8px"
           />
- 
-          {/* Card 3 (bottom left large rounded corner) */}
+
           <ServiceCard
             {...SERVICES[2]}
             radius="90px 20px 80px 20px"
+            imgRadius="74px 8px 64px 8px"
           />
- 
-          {/* Card 4 */}
-          <ServiceCard
-            {...SERVICES[3]}
-            radius="20px"
-          />
+
+          {/* Last card — smaller, scaled down, anchored top-right */}
+          <div style={{ transform: "scale(0.85)", transformOrigin: "top left" }}>
+            <ServiceCard
+              {...SERVICES[3]}
+              radius="20px"
+              imgRadius="8px"
+            />
+          </div>
         </div>
       </div>
+
+      <style>{`
+        .servicesGrid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: clamp(20px, 4vw, 5px);
+        }
+
+        @media (max-width: 768px) {
+          .servicesGrid {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
     </section>
   );
 };
- 
+
 export default ServicesSection;
- 

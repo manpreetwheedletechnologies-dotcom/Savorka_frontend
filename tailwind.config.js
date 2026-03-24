@@ -17,8 +17,8 @@ module.exports = {
         "green-pale": "#eef5e8",
       },
       fontFamily: {
-        heading: ["'Montserrat'", "sans-serif"],
-        body: ["'Open Sans'", "sans-serif"],
+        heading: ["'Montserrat'", "Manrope"],
+        body: ["'Open Sans'", "Manrope"],
       },
       boxShadow: {
         card: "0 4px 24px rgba(0,0,0,0.08)",
