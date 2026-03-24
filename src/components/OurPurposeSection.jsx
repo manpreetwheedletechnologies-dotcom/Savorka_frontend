@@ -11,7 +11,7 @@ const purposeCards = [
     bgColor: "#389400",
     description: (
       <>
-      To create a future where clean, renewable energy powers every business and contributes to a healthier planet. We envision accelerating India’s transition toward sustainable and environmentally responsible energy solutions.
+        To create a future where clean, renewable energy powers every business and contributes to a healthier planet. We envision accelerating India’s transition toward sustainable and environmentally responsible energy solutions.
         {/* Properties with solar installations
         <br />
         are more attractive to buyers and
@@ -36,7 +36,7 @@ const purposeCards = [
     description: (
       <>
 
-      Our mission is to make solar energy accessible, reliable, and cost-effective for businesses. We strive to deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
+        Our mission is to make solar energy accessible, reliable, and cost-effective for businesses. We strive to deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
         {/* Properties with solar installations
         <br />
         are more attractive to buyers and
@@ -61,9 +61,7 @@ const purposeCards = [
     bgColor: "#93cd37",
     description: (
       <>
-
-
-      Integrity, innovation, and sustainability guide everything we do. We believe in building lasting partnerships with our clients while delivering high-quality solar solutions that drive both economic and environmental impact.
+        Integrity, innovation, and sustainability guide everything we do. We believe in building lasting partnerships with our clients while delivering high-quality solar solutions that drive both economic and environmental impact.
         {/* Properties with solar installations
         <br />
         are more attractive to buyers and
