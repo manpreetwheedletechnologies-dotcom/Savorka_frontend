@@ -9,7 +9,7 @@ import bg_all from "../assets/hero_svg.jpg";
 
 const AboutHero = () => (
   <div className="w-full bg-white">
-    <HeroImageSection title="ABOUT US" heroImage={bg_all}/>
+    <HeroImageSection title="ABOUT US" heroImage={bg_all} />
     {/* <img
       src={heroimg}
       alt="About hero"
@@ -27,12 +27,7 @@ const AboutIntro = () => (
       Powering a Greener Tomorrow with Clean Solar Energy.
     </h3>
     <p className="max-w-3xl mx-auto mt-4 text-gray-800 text-base md:text-lg leading-relaxed">
-      At Savorka Solar, we deliver a seamless transition to clean energy
-      through expertly engineered, high-performance solar solutions. Our
-      approach goes beyond installation, combining advanced technology,
-      precision execution, and uncompromising quality standards. Every system
-      is designed for long-term reliability, superior efficiency, and an
-      exceptional customer experience.
+      Founded in 2016 and headquartered in Noida, Savorka is committed to delivering sustainable solar energy solutions to businesses and homes across India. We deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
     </p>
   </section>
 );

@@ -263,20 +263,18 @@ const ContactPage = () => {
 
   const getInputClass = (fieldName) => {
     const hasError = touched[fieldName] && errors[fieldName];
-    return `mt-1 p-1 border rounded outline-none transition-all duration-200 ${
-      hasError
+    return `mt-1 p-1 border rounded outline-none transition-all duration-200 ${hasError
         ? "border-red-500 focus:border-red-500"
         : "border-[#ccc] focus:border-[#2c8d06]"
-    }`;
+      }`;
   };
 
   const getTextareaClass = (fieldName) => {
     const hasError = touched[fieldName] && errors[fieldName];
-    return `mt-1 p-2 border rounded min-h-[90px] outline-none transition-all duration-200 ${
-      hasError
+    return `mt-1 p-2 border rounded min-h-[90px] outline-none transition-all duration-200 ${hasError
         ? "border-red-500 focus:border-red-500"
         : "border-[#ccc] focus:border-[#2c8d06]"
-    }`;
+      }`;
   };
 
   return (
@@ -297,9 +295,9 @@ const ContactPage = () => {
         </h3>
 
         <p className="max-w-[750px] mx-auto text-[#252424] text-[14px] sm:text-[15px] leading-relaxed">
-          Founded in 2016 and headquartered in Noida, Savorka is committed to
-          delivering sustainable solar energy solutions to businesses and homes
-          across India.
+          At Savorka Solar, we deliver a seamless transition to clean energy through expertly engineered, high-performance solar solutions. Our approach goes beyond installation, combining advanced technology, precision execution, and uncompromising quality standards. Every system is designed for long-term reliability, superior efficiency, and an exceptional customer experience.
+
+
         </p>
       </section>
 
@@ -464,11 +462,10 @@ const ContactPage = () => {
           {/* STATUS MESSAGE */}
           {submitStatus.text && (
             <div
-              className={`mb-4 rounded px-3 py-2 text-[12px] leading-relaxed ${
-                submitStatus.type === "success"
+              className={`mb-4 rounded px-3 py-2 text-[12px] leading-relaxed ${submitStatus.type === "success"
                   ? "bg-green-50 text-green-700 border border-green-200"
                   : "bg-red-50 text-red-700 border border-red-200"
-              }`}
+                }`}
             >
               {submitStatus.text}
             </div>
@@ -478,11 +475,10 @@ const ContactPage = () => {
           <button
             type="submit"
             disabled={loading || !isFormComplete}
-            className={`bg-[#2c8d06] text-white py-2 px-4 rounded transition-all duration-200 ${
-              loading || !isFormComplete
+            className={`bg-[#2c8d06] text-white py-2 px-4 rounded transition-all duration-200 ${loading || !isFormComplete
                 ? "cursor-not-allowed opacity-50"
                 : "cursor-pointer opacity-100 hover:bg-[#256f07]"
-            }`}
+              }`}
           >
             {loading ? "Sending..." : "Submit"}
           </button>
@@ -500,7 +496,7 @@ const ContactPage = () => {
             <div className="w-[65%] max-w-[490px] h-[2px] bg-[#d9d9d9] mx-auto mt-4 mb-5"></div>
 
             <h3 className="font-[Manrope] font-bold text-[#0a6f12] text-[20px] md:text-[28px] lg:text-[36px] leading-[1.25] max-w-[950px] mx-auto">
-              Building Sustainable Energy Solutions for Every Sector
+              Delivering Solar Excellence with Proven Results
             </h3>
 
             <p className="max-w-[820px] mx-auto mt-4 text-[#2b2b2b] text-[15px] sm:text-[16px] md:text-[17px] leading-[1.45]">

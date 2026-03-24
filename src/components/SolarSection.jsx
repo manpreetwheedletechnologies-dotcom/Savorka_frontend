@@ -55,12 +55,7 @@ const SolarSection = () => (
             Your Reliable Solar Energy Partner Since 2016
           </h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed text-center md:text-left">
-            Over the years, Savorka has successfully delivered numerous solar
-            projects for businesses across diverse industries. Our growing
-            portfolio reflects our commitment to quality, performance, and
-            long-term sustainability. Through cutting-edge technology and strong
-            project execution, we empower businesses with reliable and efficient
-            solar power solutions.
+            Founded in 2016 and headquartered in Noida, Savorka is committed to delivering sustainable solar energy solutions to businesses across India. With a focus on innovation, efficiency, and reliability, we help organizations transition to clean energy while reducing operational costs and carbon footprint. Our expert team ensures seamless solar adoption through advanced technology and end-to-end project execution.
           </p>
         </div>
       </div>
