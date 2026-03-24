@@ -54,7 +54,7 @@ const ProjectDetail = () => {
   />
       </div>
 
-      <section className="bg-[#FFFFFF] px-5 sm:px-8 lg:px-[100px] pb-16 md:pb-20">
+      {/* <section className="bg-[#FFFFFF] px-5 sm:px-8 lg:px-[100px] pb-16 md:pb-20">
         <div className="text-center mb-10">
           <h2 className="text-[#0c7812] font-medium text-[clamp(22px,3.5vw,32px)] leading-tight">
             Latest News & Blogs
@@ -66,7 +66,7 @@ const ProjectDetail = () => {
         <div className="mx-auto max-w-[1440px]">
           <BlogCardsRow />
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
