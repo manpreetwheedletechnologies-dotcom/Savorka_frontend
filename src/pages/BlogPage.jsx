@@ -107,9 +107,9 @@ const BlogPage = () => {
 
       {/* HEADING */}
       <section className="bg-white px-5 sm:px-6 md:px-10 py-10 md:py-14 text-center">
-        <h2 className="text-[#0c7812] font-medium text-[clamp(26px,5vw,42px)] leading-tight mb-3">
+        {/* <h2 className="text-[#0c7812] font-medium text-[clamp(26px,5vw,42px)] leading-tight mb-3">
           Blog
-        </h2>
+        </h2> */}
 
         <div className="w-[50%] max-w-[300px] h-[2px] bg-[#d6d6d6] mx-auto mb-5"></div>
 

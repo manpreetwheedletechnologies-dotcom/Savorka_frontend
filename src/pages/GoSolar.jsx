@@ -10,63 +10,63 @@ const GoSolar = () => {
   const location = useLocation();
 
   useEffect(() => {
-  if (location.hash === "#contact-form-section") {
-    const element = document.getElementById("contact-form-section");
+    if (location.hash === "#contact-form-section") {
+      const element = document.getElementById("contact-form-section");
 
-    if (element) {
-      setTimeout(() => {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }, 100);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 100);
+      }
     }
-  }
-}, [location]);
+  }, [location]);
 
 
-//     const blogRowOne = [
-//   {
-//     id: 1,
-//     category: "Service",
-//     title: "On-Grid Solar Power Solutions",
-//     description:
-//       "Cost-effective on-grid solar systems designed to reduce electricity bills and maximize returns through seamless grid connectivity.",
-//     image:
-//       "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
-//     author: "Admin",
-//     date: "20 Jan 2022",
-//     authorImage: "https://randomuser.me/api/portraits/women/44.jpg",
-//   },
-//   {
-//     id: 2,
-//     category: "Service",
-//     title: "Off-Grid Solar Power Solutions",
-//     description:
-//       "Reliable solar power solutions with battery backup for locations with limited or unstable grid availability.",
-//     image:
-//       "https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=1200&auto=format&fit=crop",
-//     author: "Admin",
-//     date: "19 Jan 2022",
-//     authorImage: "https://randomuser.me/api/portraits/men/32.jpg",
-//   },
-//   {
-//     id: 3,
-//     category: "Service",
-//     title: "Solar Operation & Maintenance (O&M)",
-//     description:
-//       "Professional O&M services to ensure consistent performance, maximum energy generation, and extended system life.",
-//     image:
-//       "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop",
-//     author: "Admin",
-//     date: "18 Jan 2022",
-//     authorImage: "https://randomuser.me/api/portraits/women/65.jpg",
-//   },
-// ];
+  //     const blogRowOne = [
+  //   {
+  //     id: 1,
+  //     category: "Service",
+  //     title: "On-Grid Solar Power Solutions",
+  //     description:
+  //       "Cost-effective on-grid solar systems designed to reduce electricity bills and maximize returns through seamless grid connectivity.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
+  //     author: "Admin",
+  //     date: "20 Jan 2022",
+  //     authorImage: "https://randomuser.me/api/portraits/women/44.jpg",
+  //   },
+  //   {
+  //     id: 2,
+  //     category: "Service",
+  //     title: "Off-Grid Solar Power Solutions",
+  //     description:
+  //       "Reliable solar power solutions with battery backup for locations with limited or unstable grid availability.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=1200&auto=format&fit=crop",
+  //     author: "Admin",
+  //     date: "19 Jan 2022",
+  //     authorImage: "https://randomuser.me/api/portraits/men/32.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     category: "Service",
+  //     title: "Solar Operation & Maintenance (O&M)",
+  //     description:
+  //       "Professional O&M services to ensure consistent performance, maximum energy generation, and extended system life.",
+  //     image:
+  //       "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop",
+  //     author: "Admin",
+  //     date: "18 Jan 2022",
+  //     authorImage: "https://randomuser.me/api/portraits/women/65.jpg",
+  //   },
+  // ];
   return (
     <div className="font-sans bg-white">
       {/* HERO */}
-       <HeroImageSection 
+      <HeroImageSection
         title="Go Solar"
         heroImage={solarservices}   // 👈 pass here
       />
@@ -79,33 +79,36 @@ const GoSolar = () => {
       </div> */}
 
 
-       <section id="contact-form-section" className="px-16 py-12">
-  <ContactFormSection />
-</section>
+      <section
+        id="contact-form-section"
+        className="px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-12"
+      >
+        <ContactFormSection />
+      </section>
 
       {/* ABOUT / COMMENT SECTION */}
-    <section className="text-center px-5 sm:px-6 md:px-10 py-10 md:py-14 bg-white">
-  
-  {/* Heading */}
-  {/* <h2 className="text-[#0c7812] font-medium text-[clamp(22px,3.5vw,32px)] leading-tight">
+      <section className="text-center px-5 sm:px-6 md:px-10 py-10 md:py-14 bg-white">
+
+        {/* Heading */}
+        {/* <h2 className="text-[#0c7812] font-medium text-[clamp(22px,3.5vw,32px)] leading-tight">
     Latest News & Blogs
   </h2> */}
 
-  {/* Wider Divider */}
-  {/* <div className="w-[320px] md:w-[400px] h-[2px] bg-[#dcdcdc] mx-auto mt-3 mb-12"></div> */}
+        {/* Wider Divider */}
+        {/* <div className="w-[320px] md:w-[400px] h-[2px] bg-[#dcdcdc] mx-auto mt-3 mb-12"></div> */}
 
-  {/* Cards */}
-  {/* <div className="mx-auto max-w-[1440px] space-y-10 md:space-y-12 mt-6">
+        {/* Cards */}
+        {/* <div className="mx-auto max-w-[1440px] space-y-10 md:space-y-12 mt-6">
     <BlogCardsRow blogs={blogRowOne} />
   </div> */}
 
-</section>
+      </section>
 
       {/* BLOG COMING SOON */}
       <section className="bg-white px-5 sm:px-8 lg:px-[100px] pb-16 md:pb-20">
         <div className="mx-auto max-w-[900px]">
           <div className="relative overflow-hidden rounded-[28px] border border-[#d8ead8] bg-gradient-to-br from-[#f8fff8] via-white to-[#f2fbf2] px-6 py-10 sm:px-10 sm:py-14 md:px-14 md:py-16 shadow-[0_20px_60px_rgba(17,120,22,0.08)]">
-            
+
             {/* animated glow */}
             <div className="pointer-events-none absolute -top-16 -left-16 h-40 w-40 rounded-full bg-[#9be15d]/20 blur-3xl animate-pulse"></div>
             <div className="pointer-events-none absolute -bottom-16 -right-16 h-40 w-40 rounded-full bg-[#00c16a]/15 blur-3xl animate-pulse"></div>
@@ -164,7 +167,7 @@ const GoSolar = () => {
         </div>
       </section>
 
-     
+
     </div>
   );
 };

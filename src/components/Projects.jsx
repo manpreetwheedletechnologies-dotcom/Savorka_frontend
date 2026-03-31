@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <section className="bg-[#FFFFFF] py-14 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-12">
       <h2 className="mb-10 text-center text-3xl font-semibold text-[#2c7a1f] sm:text-4xl">
-        Project Archives
+        Our Projects
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-x-6 md:gap-x-8 place-items-center">
@@ -46,7 +46,7 @@ export default function Projects() {
               <div className="flex min-h-[130px] flex-1 items-center justify-center px-2 pt-5 pb-2 sm:min-h-[145px]">
                 <Link
                   to={`/projects/${item.slug}`}
-                  className="text-center text-[17px] font-semibold leading-[1.25] text-[#18721f] transition duration-300 hover:text-[#125816] hover:underline focus:outline-none"
+                  className="text-center text-[17px] font-semibold leading-[1.25] text-[#18721f] transition duration-300 hover:text-[#125816] focus:outline-none"
                 >
                   {item.title}
                 </Link>

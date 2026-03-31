@@ -27,9 +27,9 @@ const ProjectDetail = () => {
       {/* Heading + paragraph */}
       <section className="bg-white px-5 sm:px-8 lg:px-[100px] py-10 md:py-14">
         <div className="max-w-[1100px] mx-auto text-center">
-          <div className="inline-block rounded-full bg-[#1a7a3c]/10 px-4 py-1 mb-4 text-sm font-medium text-[#1a7a3c]">
+          {/* <div className="inline-block rounded-full bg-[#1a7a3c]/10 px-4 py-1 mb-4 text-sm font-medium text-[#1a7a3c]">
             {project.date}
-          </div>
+          </div> */}
 
           <h2 className="text-[#1a7a3c] font-semibold text-[26px] sm:text-[34px] md:text-[40px] leading-tight mb-5">
             {project.title}

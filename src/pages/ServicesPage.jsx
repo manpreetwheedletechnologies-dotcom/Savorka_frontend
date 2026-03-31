@@ -15,34 +15,32 @@ const ServicesPages = () => {
         {/* Top section */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mb-10 md:mb-14">
           <div className="flex-1 max-w-[650px]">
-            <h2 className="text-[#1a7a3c] font-semibold text-[28px] sm:text-[34px] md:text-[40px] mb-4">
+            {/* <h2 className="text-[#1a7a3c] font-semibold text-[28px] sm:text-[34px] md:text-[40px] mb-4">
               Our Services
-            </h2>
-
+            </h2> */}
             <div className="text-gray-600 leading-relaxed text-[15px] sm:text-[16px] md:text-[17px]">
               <p>
-                We're among the largest EPC contractor in the country that
-                delivers high-performance On-Grid, Off-Grid, and Hybrid solar
-                systems. With 150+ MWp installed capacity and 70+ satisfied
-                clients, we don’t just install solar - we power long-term,
-                sustainable energy solutions.
+                We are one of the leading EPC contractors in the country, delivering
+                high-performance On-Grid, Off-Grid, and Hybrid solar solutions. With
+                over 150+ MWp of installed capacity and 70+ satisfied clients, we go
+                beyond installation—we provide reliable, long-term sustainable energy
+                solutions.
               </p>
 
               <p className="mt-4 font-medium text-gray-700">
-                Our services include:
+                Our key services include:
               </p>
 
               <ul className="list-disc pl-6 mt-2 space-y-2">
-                <li>On-grid Solar Solutions</li>
-                <li>Off-grid Solar Solution</li>
-                <li>Hybrid Solar Solutions</li>
-                <li>Operation & Maintenance</li>
-                <li>Solar Structure Manufacturing</li>
+                <li>Residential Solar Solutions</li>
+                <li>Commercial & Industrial (C&I) Solar Solutions</li>
+                <li>Ground-Mounted Solar Projects</li>
+                <li>Solar Structure Design & Manufacturing</li>
               </ul>
 
               <p className="mt-4">
-                We partner closely with our customers to build long-lasting
-                relationships and energy solutions designed to perform for 25
+                We work closely with our clients to build lasting partnerships,
+                delivering energy solutions designed to perform efficiently for 25
                 years and beyond.
               </p>
             </div>

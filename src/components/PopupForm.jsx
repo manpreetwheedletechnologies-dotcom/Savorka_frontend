@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ContackLayer from "../assets/Layer.png";
 import API_BASE_URL from "../config/api";
 
 const TABS = ["RESIDENTIAL", "HOUSING SOCIETY", "COMMERCIAL"];
@@ -30,6 +29,12 @@ const AGM_STATUS_OPTIONS = [
   "We don't have an AGM approval yet",
   "We want help in preparing for our AGM",
 ];
+
+const API_ENDPOINTS = {
+  0: "/residential",
+  1: "/housingsociety",
+  2: "/commercial",
+};
 
 const initialFormState = {
   name: "",
@@ -73,16 +78,14 @@ const PopupForm = () => {
   const [touched, setTouched] = useState({});
 
 useEffect(() => {
-  const hasShown = sessionStorage.getItem("popupShown");
+  sessionStorage.removeItem("popupShown");
 
-  if (!hasShown) {
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-      sessionStorage.setItem("popupShown", "true");
-    }, 7000); // adjust delay if needed
+  const timer = setTimeout(() => {
+    setIsVisible(true);
+    sessionStorage.setItem("popupShown", "true");
+  }, 7000);
 
-    return () => clearTimeout(timer);
-  }
+  return () => clearTimeout(timer);
 }, []);
 
   useEffect(() => {
@@ -135,9 +138,8 @@ useEffect(() => {
 
       case "whatsapp":
         if (!trimmed) return "WhatsApp Number is required.";
-        if (!/^[6-9]\d{9}$/.test(trimmed)) {
+        if (!/^[6-9]\d{9}$/.test(trimmed))
           return "Enter a valid 10-digit WhatsApp number.";
-        }
         return "";
 
       case "pincode":
@@ -148,9 +150,8 @@ useEffect(() => {
       case "societyName":
         if (activeTab === 1) {
           if (!trimmed) return "Name of Housing Society is required.";
-          if (trimmed.length < 2) {
+          if (trimmed.length < 2)
             return "Housing Society name must be at least 2 characters.";
-          }
         }
         return "";
 
@@ -169,33 +170,28 @@ useEffect(() => {
         return "";
 
       case "commercialBill":
-        if (activeTab === 2) {
-          if (!trimmed) return "Average Monthly Bill is required.";
-        }
+        if (activeTab === 2 && !trimmed)
+          return "Average Monthly Bill is required.";
         return "";
 
       case "monthlyBill":
-        if (activeTab === 1 && !trimmed) {
+        if (activeTab === 1 && !trimmed)
           return "Please select Monthly Electricity Bill.";
-        }
         return "";
 
       case "agmStatus":
-        if (activeTab === 1 && !trimmed) {
+        if (activeTab === 1 && !trimmed)
           return "Please select AGM Approval Status.";
-        }
         return "";
 
       case "selectedBill":
-        if (activeTab === 0 && selectedBill === null) {
+        if (activeTab === 0 && selectedBill === null)
           return "Please select Average Monthly Electricity Bill.";
-        }
         return "";
 
       case "selectedDesignation":
-        if (activeTab === 1 && selectedDesignation === null) {
+        if (activeTab === 1 && selectedDesignation === null)
           return "Please select your Designation in Housing Society.";
-        }
         return "";
 
       case "agreed":
@@ -224,7 +220,6 @@ useEffect(() => {
     };
 
     setErrors(newErrors);
-
     setTouched({
       name: true,
       whatsapp: true,
@@ -245,21 +240,11 @@ useEffect(() => {
 
   const handleFieldChange = (field, value) => {
     clearGlobalMessage();
-
     let updatedValue = value;
+    if (field === "whatsapp") updatedValue = value.replace(/\D/g, "").slice(0, 10);
+    if (field === "pincode") updatedValue = value.replace(/\D/g, "").slice(0, 6);
 
-    if (field === "whatsapp") {
-      updatedValue = value.replace(/\D/g, "").slice(0, 10);
-    }
-
-    if (field === "pincode") {
-      updatedValue = value.replace(/\D/g, "").slice(0, 6);
-    }
-
-    setForm((prev) => ({
-      ...prev,
-      [field]: updatedValue,
-    }));
+    setForm((prev) => ({ ...prev, [field]: updatedValue }));
 
     if (touched[field]) {
       setErrors((prev) => ({
@@ -270,11 +255,7 @@ useEffect(() => {
   };
 
   const handleBlur = (field, value) => {
-    setTouched((prev) => ({
-      ...prev,
-      [field]: true,
-    }));
-
+    setTouched((prev) => ({ ...prev, [field]: true }));
     setErrors((prev) => ({
       ...prev,
       [field]: validateSingleField(field, value),
@@ -294,9 +275,7 @@ useEffect(() => {
     e.preventDefault();
     clearGlobalMessage();
 
-    const isValid = validateForm();
-
-    if (!isValid) {
+    if (!validateForm()) {
       setResponseMsg("Please correct the highlighted fields and try again.");
       setMsgType("error");
       return;
@@ -309,64 +288,55 @@ useEffect(() => {
 
       if (activeTab === 0) {
         payload = {
-          category: "Residential",
-          name: form.name.trim(),
-          whatsapp: form.whatsapp.trim(),
+          fullname: form.name.trim(),
+          whatsappnumber: form.whatsapp.trim(),
           pincode: form.pincode.trim(),
           bill: BILL_OPTIONS[selectedBill],
+          agree: agreed,
         };
       }
 
       if (activeTab === 1) {
         payload = {
-          category: "Housing Society",
-          name: form.name.trim(),
+          fullname: form.name.trim(),
           whatsapp: form.whatsapp.trim(),
           pincode: form.pincode.trim(),
           societyName: form.societyName.trim(),
-          monthlyBill: monthlyBill,
+          bill: monthlyBill,
           agmStatus: agmStatus,
           designation: DESIGNATION_OPTIONS[selectedDesignation],
+          agree: agreed,
         };
       }
 
       if (activeTab === 2) {
         payload = {
-          category: "Commercial",
-          name: form.name.trim(),
+          fullname: form.name.trim(),
           whatsapp: form.whatsapp.trim(),
           pincode: form.pincode.trim(),
           companyName: form.companyName.trim(),
           city: form.city.trim(),
-          commercialBill: form.commercialBill.trim(),
+          bill: form.commercialBill.trim(),
+          agree: agreed,
         };
       }
 
-      const res = await fetch(`${API_BASE_URL}/leads`, {
+      const res = await fetch(`${API_BASE_URL}${API_ENDPOINTS[activeTab]}`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
       let data = null;
-
-      try {
-        data = await res.json();
-      } catch {
-        data = null;
-      }
+      try { data = await res.json(); } catch { data = null; }
 
       if (!res.ok) {
         throw new Error(
-          data?.message || "Failed to submit form. Please try again."
+          data?.msg || data?.error || "Failed to submit form. Please try again."
         );
       }
 
-      setResponseMsg(
-        data?.message || "Thank you! Our team will contact you shortly."
-      );
+      setResponseMsg(data?.msg || "Thank you! Our team will contact you shortly.");
       setMsgType("success");
       resetForm();
       setIsVisible(false);
@@ -438,6 +408,7 @@ useEffect(() => {
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="px-6 py-5 space-y-4" noValidate>
+
             {/* Full Name */}
             <div>
               <label className="text-[11px] font-semibold text-gray-600 uppercase tracking-wide">
@@ -590,6 +561,41 @@ useEffect(() => {
               )}
             </div>
 
+            {/* Residential — Monthly Bill chips */}
+            {activeTab === 0 && (
+              <div>
+                <label className="text-[11px] font-semibold text-gray-600 uppercase tracking-wide mb-2 block">
+                  Average Monthly Electricity Bill *
+                </label>
+                <div className="grid grid-cols-2 gap-2">
+                  {BILL_OPTIONS.map((opt, i) => (
+                    <button
+                      type="button"
+                      key={i}
+                      onClick={() => {
+                        clearGlobalMessage();
+                        setSelectedBill(i);
+                        if (touched.selectedBill) {
+                          setErrors((prev) => ({ ...prev, selectedBill: "" }));
+                        }
+                      }}
+                      className={`px-3 py-2 rounded-lg text-xs border font-medium cursor-pointer transition
+                        ${
+                          selectedBill === i
+                            ? "bg-[#1a7a3c] text-white border-[#1a7a3c]"
+                            : "bg-white text-gray-600 border-gray-200 hover:border-[#1a7a3c]"
+                        }`}
+                    >
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+                {touched.selectedBill && errors.selectedBill && (
+                  <p className="mt-2 text-xs text-red-600">{errors.selectedBill}</p>
+                )}
+              </div>
+            )}
+
             {/* Housing Society — Monthly Bill dropdown */}
             {activeTab === 1 && (
               <div>
@@ -633,7 +639,7 @@ useEffect(() => {
               </div>
             )}
 
-            {/* Housing Society — Designation */}
+            {/* Housing Society — Designation chips */}
             {activeTab === 1 && (
               <div>
                 <label className="text-[11px] font-semibold text-gray-600 uppercase tracking-wide mb-2 block">
@@ -648,10 +654,7 @@ useEffect(() => {
                         clearGlobalMessage();
                         setSelectedDesignation(i);
                         if (touched.selectedDesignation) {
-                          setErrors((prev) => ({
-                            ...prev,
-                            selectedDesignation: "",
-                          }));
+                          setErrors((prev) => ({ ...prev, selectedDesignation: "" }));
                         }
                       }}
                       className={`px-3 py-2 rounded-lg text-xs border font-medium cursor-pointer transition
@@ -666,14 +669,12 @@ useEffect(() => {
                   ))}
                 </div>
                 {touched.selectedDesignation && errors.selectedDesignation && (
-                  <p className="mt-2 text-xs text-red-600">
-                    {errors.selectedDesignation}
-                  </p>
+                  <p className="mt-2 text-xs text-red-600">{errors.selectedDesignation}</p>
                 )}
               </div>
             )}
 
-            {/* Housing Society — AGM */}
+            {/* Housing Society — AGM Status */}
             {activeTab === 1 && (
               <div>
                 <label className="text-[11px] font-semibold text-gray-600 uppercase tracking-wide">
@@ -739,44 +740,6 @@ useEffect(() => {
               </div>
             )}
 
-            {/* Residential — Monthly Bill chips */}
-            {activeTab === 0 && (
-              <div>
-                <label className="text-[11px] font-semibold text-gray-600 uppercase tracking-wide mb-2 block">
-                  Average Monthly Electricity Bill *
-                </label>
-                <div className="grid grid-cols-2 gap-2">
-                  {BILL_OPTIONS.map((opt, i) => (
-                    <button
-                      type="button"
-                      key={i}
-                      onClick={() => {
-                        clearGlobalMessage();
-                        setSelectedBill(i);
-                        if (touched.selectedBill) {
-                          setErrors((prev) => ({
-                            ...prev,
-                            selectedBill: "",
-                          }));
-                        }
-                      }}
-                      className={`px-3 py-2 rounded-lg text-xs border font-medium cursor-pointer transition
-                        ${
-                          selectedBill === i
-                            ? "bg-[#1a7a3c] text-white border-[#1a7a3c]"
-                            : "bg-white text-gray-600 border-gray-200 hover:border-[#1a7a3c]"
-                        }`}
-                    >
-                      {opt}
-                    </button>
-                  ))}
-                </div>
-                {touched.selectedBill && errors.selectedBill && (
-                  <p className="mt-2 text-xs text-red-600">{errors.selectedBill}</p>
-                )}
-              </div>
-            )}
-
             {/* Terms */}
             <div className="flex flex-col">
               <div className="flex items-start gap-2 pt-1">
@@ -808,7 +771,7 @@ useEffect(() => {
               )}
             </div>
 
-            {/* Message */}
+            {/* Response Message */}
             {responseMsg && (
               <div
                 className={`text-sm font-medium px-4 py-2 rounded-lg ${

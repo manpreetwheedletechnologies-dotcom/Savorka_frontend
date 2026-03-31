@@ -16,21 +16,21 @@ const TopBar = () => {
         info@savorka.in
       </a>
       <div className="flex items-center gap-4">
-        <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
+        <a href="https://www.facebook.com/share/18UkDvnpcQ/" target="_blank" className="topbar-link hover:text-primary-bright transition-colors">
           <FaFacebookF size={14} />
         </a>
-        <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
+        {/* <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
           <FaXTwitter size={14} />
-        </a>
-        <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
+        </a> */}
+        <a href="https://www.instagram.com/its_savorkasolar?igsh=bmF0MWhiNHduZTNu" target="_blank" className="topbar-link hover:text-primary-bright transition-colors">
           <FaInstagram size={14} />
         </a>
-        <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
+        <a href="https://www.linkedin.com/company/savorka-solar/" target="_blank" className="topbar-link hover:text-primary-bright transition-colors">
           <FaLinkedinIn size={14} />
         </a>
-        <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
+        {/* <a href="#" className="topbar-link hover:text-primary-bright transition-colors">
           <FaYoutube size={15} />
-        </a>
+        </a> */}
       </div>
     </div>
   );

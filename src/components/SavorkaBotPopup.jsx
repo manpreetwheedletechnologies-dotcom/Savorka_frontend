@@ -20,7 +20,7 @@ import {
   CheckSquare,
 } from "lucide-react";
 import savorkaLogo from "../assets/svorka_bot.svg";
-
+import API_BASE_URL from "../config/api";
 const SERVICE_OPTIONS = [
   { label: "Efficient On-Grid Solar Power Solutions", icon: Zap },
   { label: "Solar Structuring and Manufacturing", icon: Wrench },
@@ -446,22 +446,42 @@ export default function SavorkaBotPopup({ isOpen, onClose }) {
 
   const isValidMobile = (mobile) => /^[0-9]{10}$/.test(mobile);
 
-  const handleConfirmDetails = () => {
-    setShowConfirmPopup(false);
-    setShowInput(false);
+const handleConfirmDetails = async () => {
+  setShowConfirmPopup(false);
+  setShowInput(false);
 
-    addBotMessageWithTyping("Thank you. We will contact you soon.", () => {
-      setConversationStep(FORM_STEPS.DONE);
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: Date.now() + 10,
-          sender: "bot",
-          type: "previous",
-        },
-      ]);
+  // Send data to API
+  try {
+    await fetch(`${API_BASE_URL}/chatbot-query`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: otherFormData.name,
+        email: otherFormData.email,
+        phone: otherFormData.mobile,   // mapped mobile → phone
+        address: otherFormData.address,
+        query: otherFormData.query,
+        agree: true,
+      }),
     });
-  };
+  } catch (err) {
+    console.error("Chatbot API error:", err);
+  }
+
+  addBotMessageWithTyping("Thank you. We will contact you soon.", () => {
+    setConversationStep(FORM_STEPS.DONE);
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: Date.now() + 10,
+        sender: "bot",
+        type: "previous",
+      },
+    ]);
+  });
+};
 
   const handleEditDetails = () => {
     restartOtherFlow();

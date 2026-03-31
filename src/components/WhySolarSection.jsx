@@ -56,7 +56,7 @@ const WhySolarSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 items-stretch">
 
           {/* Save on Electricity Bills — light green, TALL */}
-          <div className="bg-[#8cc63f] rounded-3xl px-7 py-10 flex flex-col justify-start
+          <div className="bg-[#8cc63f] rounded-3xl px-7 py-10 flex flex-col items-center justify-center text-center
             transition-all duration-300 ease-out
             hover:-translate-y-2 hover:shadow-xl hover:shadow-black-400/50 hover:bg-[#7db835] cursor-pointer">
             <h3 className="text-[17px] font-semibold text-white mb-3">
@@ -68,7 +68,7 @@ const WhySolarSection = () => {
           </div>
 
           {/* Eco-Friendly Energy Source — dark green, SMALL */}
-          <div className="bg-[#4a8f2a] rounded-3xl px-7 py-9 flex flex-col justify-center scale-90 origin-center
+          <div className="bg-[#4a8f2a] rounded-3xl px-7 py-9 flex flex-col items-center justify-center text-center scale-90 origin-center
             transition-all duration-300 ease-out
             hover:scale-95 hover:shadow-xl hover:shadow-black-700/40 hover:bg-[#3d7a22] cursor-pointer">
             <h3 className="text-[17px] font-semibold text-white mb-3">
@@ -80,7 +80,7 @@ const WhySolarSection = () => {
           </div>
 
           {/* Energy Independence — dark green, SMALL */}
-          <div className="bg-[#4a8f2a] rounded-3xl px-7 py-9 flex flex-col justify-center scale-90 origin-center
+          <div className="bg-[#4a8f2a] rounded-3xl px-7 py-9 flex flex-col items-center justify-center text-center scale-90 origin-center
             transition-all duration-300 ease-out
             hover:scale-95 hover:shadow-xl hover:shadow-black-700/40 hover:bg-[#3d7a22] cursor-pointer">
             <h3 className="text-[17px] font-semibold text-white mb-3">
@@ -92,7 +92,7 @@ const WhySolarSection = () => {
           </div>
 
           {/* Increase Property Value — light green, TALL */}
-          <div className="bg-[#8cc63f] rounded-3xl px-7 py-10 flex flex-col justify-start
+          <div className="bg-[#8cc63f] rounded-3xl px-7 py-10 flex flex-col items-center justify-center text-center
             transition-all duration-300 ease-out
             hover:-translate-y-2 hover:shadow-xl hover:shadow-black-400/50 hover:bg-[#7db835] cursor-pointer">
             <h3 className="text-[17px] font-semibold text-white mb-3">

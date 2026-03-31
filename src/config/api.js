@@ -4,10 +4,10 @@ const isProduction = import.meta.env.MODE === "production";
 
 const config = {
   development: {
-    BASE_URL: "http://localhost:5000/api",
+    BASE_URL: "https://www.savorka.in/api",
   },
   production: {
-    BASE_URL: "http://localhost:5000/api",
+    BASE_URL: "https://www.savorka.in/api",
   },
 };
 

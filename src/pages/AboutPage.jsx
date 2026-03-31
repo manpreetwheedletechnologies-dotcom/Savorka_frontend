@@ -27,7 +27,7 @@ const AboutIntro = () => (
       Powering a Greener Tomorrow with Clean Solar Energy.
     </h3>
     <p className="max-w-3xl mx-auto mt-4 text-gray-800 text-base md:text-lg leading-relaxed">
-      Founded in 2016 and headquartered in Noida, Savorka is committed to delivering sustainable solar energy solutions to businesses and homes across India. We deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
+       We deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
     </p>
   </section>
 );

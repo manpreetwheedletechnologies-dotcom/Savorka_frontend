@@ -1,87 +1,95 @@
 import React from "react";
-import serviceimg1 from "../assets/serviceimg1.png";
-import serviceimg2 from "../assets/serviceimg2.png";
-import serviceimg3 from "../assets/serviceimg3.png";
-import serviceimg4 from "../assets/serviceimg4.png";
+import serviceimg1 from "../assets/Residential.jpeg";
+import serviceimg2 from "../assets/c&I.jpeg";
+import serviceimg3 from "../assets/ground.jpeg";
+import serviceimg4 from "../assets/Factory (STRUCTURE MANUFACTURING).jpeg";
 import bg from "../assets/ser_bg.png"
+import { Link } from "react-router-dom";
 
 const SERVICES = [
   {
     img: serviceimg1,
-    title: "Efficient On-Grid Solar Power Solutions",
-    desc: "Designed to reduce electricity bills and maximize returns through seamless grid integration.",
+    title: "Residential Solar Solutions",
+    desc: "Solar solutions for homes designed to reduce electricity bills and maximize long-term savings.",
+    links: "residential"
   },
   {
     img: serviceimg2,
-    title: "Solar Structuring and Manufacturing",
-    desc: "Durable precision-engineered solar mounting structures for rooftop and ground projects.",
+    title: "C&I (Commercial & Industrial) Solar Solutions",
+    desc: "Scalable solar systems for businesses to lower operational costs and improve energy efficiency.",
+    links: "commercial-industrial-solar"
   },
   {
     img: serviceimg3,
-    title: "Solar Operation & Maintenance (O&M)",
-    desc: "Solar Operation & Maintenance ensures your solar system performs efficiently throughout its lifespan.",
+    title: "Ground Mounted Solar Projects",
+    desc: "High-efficiency ground-mounted solar installations ideal for large-scale power generation projects.",
+    links: "ground-mounted-solar"
   },
   {
     img: serviceimg4,
-    title: "Off-Grid & Hybrid Solar Solutions",
-    desc: "Reliable solar power with battery backup for unstable or limited grid areas.",
+    title: "Solar Structure Manufacturing ",
+    desc: "Durable, precision-engineered solar mounting structures for rooftop and ground-based installations.",
+    links: "solar-structure-manufacturing"
   },
 ];
 
-const ServiceCard = ({ img, title, desc, radius, imgRadius = "12px" }) => (
-  <div
-    style={{
-      background: "#fff",
-      borderRadius: radius,
-      boxShadow: "0 12px 30px rgba(0,0,0,0.12)",
-      transition: "all 0.35s ease",
-      padding: "16px",
-    }}
-    onMouseEnter={(e) => {
-      e.currentTarget.style.transform = "translateY(-8px)";
-      e.currentTarget.style.boxShadow = "0 20px 50px rgba(0,0,0,0.2)";
-    }}
-    onMouseLeave={(e) => {
-      e.currentTarget.style.transform = "translateY(0)";
-      e.currentTarget.style.boxShadow = "0 12px 30px rgba(0,0,0,0.12)";
-    }}
-  >
-    {/* Image sits inside padding, gets its own inner radius */}
-    <img
-      src={img}
-      alt={title}
+const ServiceCard = ({ img, title, desc, links, radius, imgRadius = "12px" }) => (
+  <Link to={`/services/${links}`}
+    key={title}>
+    <div
       style={{
-        width: "100%",
-        height: "200px",
-        objectFit: "cover",
-        borderRadius: imgRadius,
-        display: "block",
+        background: "#fff",
+        borderRadius: radius,
+        boxShadow: "0 12px 30px rgba(0,0,0,0.12)",
+        transition: "all 0.35s ease",
+        padding: "16px",
       }}
-    />
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-8px)";
+        e.currentTarget.style.boxShadow = "0 20px 50px rgba(0,0,0,0.2)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+        e.currentTarget.style.boxShadow = "0 12px 30px rgba(0,0,0,0.12)";
+      }}
+    >
+      {/* Image sits inside padding, gets its own inner radius */}
+      <img
+        src={img}
+        alt={title}
+        style={{
+          width: "100%",
+          height: "200px",
+          objectFit: "cover",
+          borderRadius: imgRadius,
+          display: "block",
+        }}
+      />
 
-    <div style={{ padding: "18px 8px 8px", textAlign: "center" }}>
-      <h3
-        style={{
-          fontWeight: "700",
-          fontSize: "16px",
-          color: "#0d2137",
-          marginBottom: "10px",
-        }}
-      >
-        {title}
-      </h3>
-      <p
-        style={{
-          fontSize: "13px",
-          color: "#6b6b6b",
-          lineHeight: "1.6",
-          margin: 0,
-        }}
-      >
-        {desc}
-      </p>
+      <div style={{ padding: "18px 8px 8px", textAlign: "center" }}>
+        <h3
+          style={{
+            fontWeight: "700",
+            fontSize: "16px",
+            color: "#0d2137",
+            marginBottom: "10px",
+          }}
+        >
+          {title}
+        </h3>
+        <p
+          style={{
+            fontSize: "13px",
+            color: "#6b6b6b",
+            lineHeight: "1.6",
+            margin: 0,
+          }}
+        >
+          {desc}
+        </p>
+      </div>
     </div>
-  </div>
+  </Link>
 );
 
 const ServicesSection = () => {
@@ -96,17 +104,17 @@ const ServicesSection = () => {
     >
       {/* Background */}
       <div
-style={{
-  position: "absolute",
-  right: 0,
-  bottom: 80,
-  width: "100%",
-  height: "60%",
-  backgroundImage: `url(${bg}`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  opacity: 0.8,
-}}
+        style={{
+          position: "absolute",
+          right: 0,
+          bottom: 80,
+          width: "100%",
+          height: "60%",
+          backgroundImage: `url(${bg}`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.8,
+        }}
       />
 
       <div
