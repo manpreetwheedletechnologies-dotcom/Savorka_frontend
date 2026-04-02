@@ -94,7 +94,7 @@ const BlogPage = () => {
     <div className="font-sans bg-white">
       {/* HERO */}
        <HeroImageSection 
-        title="Our Blogs"
+        title="OUR BLOGS"
         heroImage={solarservices}   // 👈 pass here
       />
       {/* <div className="w-full overflow-hidden">

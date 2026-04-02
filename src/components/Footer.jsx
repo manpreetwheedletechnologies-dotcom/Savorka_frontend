@@ -4,7 +4,6 @@ import SavorkaLogo from "../assets/footerlogo.png";
 import { FaChevronRight } from "react-icons/fa";
 import servicesData from "../data/servicesData";
 import API_BASE_URL from "../config/api";
-// import API_BASE_URL from "../config/api";
 
 const QUICK_LINKS = [
   { name: "Home", path: "/" },
@@ -12,13 +11,6 @@ const QUICK_LINKS = [
   { name: "Services", path: "/services" },
   { name: "Contact Us", path: "/contact" },
 ];
-
-// const SERVICES = [
-//   "On-Grid Solar Solutions",
-//   "Off-Grid & Hybrid Solar Solutions",
-//   "Solar Operation & Maintenance (O&M)",
-//   "Solar Structure Manufacturing",
-// ];
 
 const Footer = () => {
   const [name, setName] = useState("");
@@ -51,18 +43,11 @@ const Footer = () => {
 
       const res = await fetch(`${API_BASE_URL}/newsletters`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: trimmedName,
-          email: trimmedEmail,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: trimmedName, email: trimmedEmail }),
       });
 
-      if (!res.ok) {
-        throw new Error("Failed to subscribe");
-      }
+      if (!res.ok) throw new Error("Failed to subscribe");
 
       setMessageType("success");
       setMessage("Thank you for subscribing to our newsletter.");
@@ -90,7 +75,6 @@ const Footer = () => {
                 draggable="false"
               />
             </Link>
-
             <p className="mt-5 text-[13px] leading-[1.32] text-[#E2E2E2]">
               Savorka Solar is a fast-growing renewable energy company
               delivering end-to-end solar solutions across residential,
@@ -106,7 +90,6 @@ const Footer = () => {
             <h4 className="mb-5 text-[16px] font-bold leading-none text-white">
               Quick Links
             </h4>
-
             <ul className="space-y-5">
               {QUICK_LINKS.map((link) => (
                 <li key={link.name}>
@@ -130,7 +113,6 @@ const Footer = () => {
             <h4 className="mb-5 text-[16px] font-bold leading-none text-white">
               Our Services
             </h4>
-
             <ul className="space-y-5">
               {servicesData.slice(0, 4).map((service) => (
                 <li key={service.id}>
@@ -154,12 +136,10 @@ const Footer = () => {
             <h4 className="mb-5 text-[16px] font-bold leading-none text-white">
               Newsletter
             </h4>
-
             <p className="mb-5 text-[13px] leading-[1.3] text-[#E2E2E2]">
               Signup our newsletter to get update information, news, insight or
               promotions.
             </p>
-
             <div className="space-y-2.5">
               <input
                 type="text"
@@ -167,28 +147,20 @@ const Footer = () => {
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
-                  if (message) {
-                    setMessage("");
-                    setMessageType("");
-                  }
+                  if (message) { setMessage(""); setMessageType(""); }
                 }}
                 className="h-[22px] w-full rounded-[2px] border border-[#BFBFBF] bg-[#F3F3F3] px-3 text-[12px] text-[#1C1C1C] outline-none placeholder:text-[#8B8B8B] focus:border-[#B6E23A]"
               />
-
               <input
                 type="email"
                 placeholder="Email ID"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
-                  if (message) {
-                    setMessage("");
-                    setMessageType("");
-                  }
+                  if (message) { setMessage(""); setMessageType(""); }
                 }}
                 className="h-[22px] w-full rounded-[2px] border border-[#BFBFBF] bg-[#F3F3F3] px-3 text-[12px] text-[#1C1C1C] outline-none placeholder:text-[#8B8B8B] focus:border-[#B6E23A]"
               />
-
               <button
                 onClick={handleSubscribe}
                 disabled={loading}
@@ -196,13 +168,10 @@ const Footer = () => {
               >
                 {loading ? "Submitting..." : "Subscribe"}
               </button>
-
               {message && (
                 <p
                   className={`pt-1 text-[12px] leading-[1.35] ${
-                    messageType === "success"
-                      ? "text-[#B6E23A]"
-                      : "text-[#FF8A8A]"
+                    messageType === "success" ? "text-[#B6E23A]" : "text-[#FF8A8A]"
                   }`}
                 >
                   {message}
@@ -212,11 +181,93 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/45" />
+        {/* ── Glowing neon divider ── */}
+        <div
+          style={{
+            height: "1px",
+            background:
+              "linear-gradient(90deg, transparent 0%, #B6E23A44 15%, #B6E23A 50%, #B6E23A44 85%, transparent 100%)",
+            boxShadow: "0 0 14px 3px #B6E23A55, 0 0 40px 6px #B6E23A22",
+          }}
+        />
 
-        <div className="flex min-h-[62px] items-center justify-center py-4 text-center">
-          <p className="text-[12px] text-[#D8D8D8]">
-            Copyright © 2026 Savorka Solar, All rights reserved.
+        {/* ── Bottom bar ── */}
+        <div
+          style={{ position: "relative", overflow: "hidden" }}
+          className="flex flex-col items-center justify-center gap-[6px] py-6 text-center"
+        >
+          {/* Radial glow backdrop */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background:
+                "radial-gradient(ellipse 70% 120% at 50% 110%, #B6E23A1a 0%, transparent 65%)",
+              pointerEvents: "none",
+            }}
+          />
+
+          {/* Copyright */}
+          <p className="relative text-[12px] text-[#909090]">
+            Copyright © 2026 Savorka Solar. All rights reserved.
+          </p>
+
+          {/* Neon tagline */}
+          <p
+            className="relative text-[12.5px] font-semibold tracking-widest uppercase"
+            style={{
+              color: "#B6E23A",
+              textShadow:
+                "0 0 6px #B6E23Acc, 0 0 18px #B6E23A88, 0 0 38px #B6E23A44",
+              letterSpacing: "0.12em",
+            }}
+          >
+            ⚡ Powered by clean energy &amp; great code.
+          </p>
+
+          {/* Thin separator dots */}
+          <div className="relative flex items-center gap-2 py-[2px]">
+            {[...Array(3)].map((_, i) => (
+              <span
+                key={i}
+                style={{
+                  display: "inline-block",
+                  width: 3,
+                  height: 3,
+                  borderRadius: "50%",
+                  background: "#B6E23A",
+                  boxShadow: "0 0 6px 2px #B6E23A88",
+                  opacity: i === 1 ? 1 : 0.45,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Developer credit */}
+          <p className="relative text-[11px] text-[#555555]">
+            Developed by{" "}
+            <a
+              href="https://wheedletechnologies.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#B6E23A",
+                textShadow: "0 0 8px #B6E23Aaa",
+                fontWeight: 600,
+                transition: "color 0.25s, text-shadow 0.25s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#d8f772";
+                e.currentTarget.style.textShadow =
+                  "0 0 12px #B6E23Aff, 0 0 28px #B6E23A88";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "#B6E23A";
+                e.currentTarget.style.textShadow = "0 0 8px #B6E23Aaa";
+              }}
+            >
+              WheedleTechnologies.ai
+            </a>
           </p>
         </div>
       </div>

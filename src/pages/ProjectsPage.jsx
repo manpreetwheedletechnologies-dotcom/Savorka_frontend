@@ -6,7 +6,7 @@ import bg_all from "../assets/hero_svg.jpg";
 
 const ProjectsPage = () => (
   <main>
-    <HeroImageSection title="Project Archives" heroImage={bg_all}/>
+    <HeroImageSection title="OUR PROJECTS" heroImage={bg_all}/>
     <Projects />
     <BlurImage />
   </main>

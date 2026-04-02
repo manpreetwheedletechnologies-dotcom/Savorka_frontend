@@ -67,7 +67,7 @@ const GoSolar = () => {
     <div className="font-sans bg-white">
       {/* HERO */}
       <HeroImageSection
-        title="Go Solar"
+        title="GO SOLAR"
         heroImage={solarservices}   // 👈 pass here
       />
       {/* <div className="w-full overflow-hidden">

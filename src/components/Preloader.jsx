@@ -191,7 +191,7 @@ function calcLayout(vw, vh) {
     const solarPadH = isMobile ? 14 : 20;
     const lineW = isMobile ? 50 : 90;
 
-    const canvasOffX = vw * 0.15;
+    const canvasOffX = vw * 0.11;
     const canvasOffY = vh * 0.15;
 
     let cx, cy;

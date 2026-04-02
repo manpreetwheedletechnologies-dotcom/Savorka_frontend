@@ -9,7 +9,7 @@ import bg_all from "../assets/hero_svg.jpg";
 const ServicesPages = () => {
   return (
     <>
-      <HeroImageSection title="Our Services" heroImage={bg_all} />
+      <HeroImageSection title="OUR SERVICES" heroImage={bg_all} />
 
       <section className="bg-white px-5 sm:px-8 lg:px-[100px] py-10 md:py-14">
         {/* Top section */}

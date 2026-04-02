@@ -93,7 +93,7 @@ const Navbar = () => {
       style={{
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
-        backgroundColor: "rgba(255,255,255,0.9)",
+        backgroundColor: "rgba(255, 255, 255, 0.24)",
       }}
     >
       {/* Logo */}

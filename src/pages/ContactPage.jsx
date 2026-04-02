@@ -55,12 +55,12 @@ const ContactPage = () => {
     { name: "Rishabh Sharma", role: "Managing Director", img: rishabh },
     { name: "Arpit Chaudhary", role: "Sales Director-Residential and C&I", img: arpit },
     { name: "Priya Kaushik", role: "Finance & HR Coordinator", img: priya },
-    { name: "Shivani Tyagi", role: "Senior Accountant", img: sivangi },
+    { name: "Shivani Tyagi", role: "Accounting Manger", img: sivangi },
     { name: "Yash Tripathi", role: "Production Director", img: Yash },
-    { name: "Anil Kumar Pal", role: "Sr. Design Manager", img: Anil },
+    { name: "Anil Kumar Pal", role: "Sr. Design Engineer", img: Anil },
     { name: "Sumit Kumar", role: "Project Manager", img: Sumit },
     { name: "Tripti Yadav", role: "Assistant Project Manager", img: Tripti },
-    { name: "Vanshika Rana", role: "HR & Admin Trainee", img: Vanshika },
+    { name: "Vanshika Rana", role: "HR & Admin Manager", img: Vanshika },
   ];
 
   const validateField = (name, value) => {
@@ -270,7 +270,7 @@ const ContactPage = () => {
       `}</style>
 
       {/* ── HERO ── */}
-      <HeroImageSection title="Contact US" heroImage={solarservices} />
+      <HeroImageSection title="CONTACT US" heroImage={solarservices} />
 
       {/* ── ABOUT ── */}
       <section className="text-center px-5 py-8">
@@ -295,7 +295,7 @@ const ContactPage = () => {
         <div className="flex-1 min-w-[220px] text-center p-5 border-r border-white/20 bg-[#5BAF12]">
           <h4 className="text-[22px] md:text-[24px] font-semibold">Head Office</h4>
           <p className="text-[15px] md:text-[16px] mt-1">
-            32-33, Floor 8, GM IT Park, Servespace sector 142, Noida, UP - 201304
+            32-33, Floor 8, GM IT Park, Sector 142, Noida, UP - 201304
           </p>
         </div>
         <div className="flex-1 min-w-[220px] text-center p-5 bg-[#93CF34]">
@@ -490,10 +490,10 @@ const ContactPage = () => {
                 <div
                   key={index}
                   ref={(el) => (cardRefs.current[index] = el)}
-                  className="group opacity-0 w-[210px] sm:w-[220px] rounded-[20px] bg-white overflow-hidden
+                  className="group opacity-0 w-[230px] sm:w-[230px] rounded-[20px] bg-white overflow-hidden
                     shadow-[10px_14px_22px_rgba(0,0,0,0.22)]
                     transition-[transform,box-shadow] duration-300 ease-out
-                    hover:-translate-y-3 hover:scale-[1.02]
+                    hover:-translate-y-3 hover:scale-[2.02]
                     hover:shadow-[14px_20px_30px_rgba(0,0,0,0.28)]"
                 >
                   <div

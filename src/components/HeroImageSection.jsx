@@ -1,9 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion"; // Make sure to run: npm install framer-motion
+import { motion } from "framer-motion";
 import bg_all from "../assets/hero_svg.jpg";
 
 const HeroImageSection = ({
-  title = "Your Page Title",
+  title,
   heroImage = bg_all,
 }) => {
   return (
@@ -25,27 +25,48 @@ const HeroImageSection = ({
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
-        {/* 2. ONLY THE TITLE IS ANIMATED */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none pb-16 md:pb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }} // Starts lower and invisible
-            animate={{ opacity: 1, y: 0 }} // Slides up to position
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="bg-white/10 backdrop-blur-md border border-white/20 px-8 md:px-10 py-5 md:py-6 rounded-2xl shadow-2xl"
-          >
-            <h1 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-green-100 to-green-300 drop-shadow-sm text-center tracking-tight leading-[1.28] pb-2 inline-block">
-              {title}
-            </h1>
+        {/* 2. ONLY THE TITLE IS ANIMATED — renders only if title is provided */}
+{title && (
+  <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none 
+                  px-4 sm:px-6 md:px-8 
+                  pb-10 sm:pb-14 md:pb-20">
 
-            {/* Animated Underline */}
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: "5rem" }}
-              transition={{ duration: 0.6, delay: 0.8 }} // Appears after the text settles
-              className="h-1.5 bg-gradient-to-r from-[#8FCC36] to-[#61C825] mx-auto mt-4 rounded-full shadow-[0_0_15px_rgba(143,204,54,0.6)]"
-            />
-          </motion.div>
-        </div>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="w-full max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-xl
+                 bg-white/10 backdrop-blur-md border border-white/20
+                 px-5 sm:px-6 md:px-10 
+                 py-4 sm:py-5 md:py-6 
+                 rounded-xl sm:rounded-2xl 
+                 shadow-2xl text-center"
+    >
+      
+      <h1 className="
+        font-extrabold text-transparent bg-clip-text 
+        bg-gradient-to-r from-white via-green-100 to-green-300 
+        drop-shadow-sm tracking-tight leading-tight
+        text-[clamp(1.5rem,5vw,3rem)]
+      ">
+        {title}
+      </h1>
+
+      {/* Animated Underline */}
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: "clamp(3rem, 20vw, 5rem)" }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+        className="h-1 sm:h-1.5 
+                   bg-gradient-to-r from-[#8FCC36] to-[#61C825] 
+                   mx-auto mt-3 sm:mt-4 
+                   rounded-full 
+                   shadow-[0_0_15px_rgba(143,204,54,0.6)]"
+      />
+      
+    </motion.div>
+  </div>
+)}
 
         {/* 3. Clip Path Definition */}
         <svg width="0" height="0" className="absolute">

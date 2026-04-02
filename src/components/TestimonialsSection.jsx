@@ -3,41 +3,101 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ALL_TESTIMONIALS = [
   {
-    role: "Facility Manager",
-    company: "COMMERCIAL BUILDING",
-    text: "Our monthly electricity costs dropped significantly after installing an On-Grid system by Savorka Solar. Their team handled everything from design to net-metering.",
+    role: "Mr. Vishal Singh",
+    company: "ADANI LOGISTICS LIMITED — TAORU",
+    location: "Pataudi Road, Garhi Harsaru, Gurugram, Haryana",
+    capacity: "500 kWp",
+    text: "The 500 kWp solar installation at our Gurugram logistics park has significantly reduced our operational energy costs. Savorka Solar's team handled everything seamlessly — from design to commissioning.",
   },
   {
-    role: "Operations Head",
-    company: "MANUFACTURING UNIT",
-    text: "Savorka Solar delivered our 500 kWp rooftop system with precision and professionalism. The installation was smooth, and the performance has exceeded expectations.",
+    role: "Mr. Shyamsundar Sharma",
+    company: "ADANI LOGISTICS LIMITED — INDORE",
+    location: "ICD Indore, Madhya Pradesh",
+    capacity: "200 kWp",
+    text: "Our 200 kWp rooftop system at the Indore ICD has been performing above expectations. The installation was professional and the O&M support has been excellent.",
   },
   {
-    role: "Director",
-    company: "INDUSTRIAL CLIENT",
-    text: "The O&M team ensures our solar plant runs at peak performance throughout the year. Fast response, accurate monitoring, and excellent reporting.",
+    role: "Mr. Krishan Kumar",
+    company: "ADANI AGRI LIMITED — PANIPAT",
+    location: "Naultha, Near Geeta University, Panipat, Haryana",
+    capacity: "62 kWp",
+    text: "Savorka Solar delivered our 62 kWp system on time and within budget. The energy savings have been consistent and the monitoring reports are detailed and accurate.",
   },
   {
-    role: "Plant Manager",
-    company: "TEXTILE INDUSTRY",
-    text: "Savorka Solar's hybrid solution helped us achieve energy independence. The battery backup system ensures uninterrupted production even during grid outages.",
+    role: "Mr. D",
+    company: "KOTKAPURA FACILITY",
+    location: "Opposite Hotel Blue Hill, Faridkot Road, Kotkapura",
+    capacity: "50 kWp",
+    text: "The solar installation has delivered reliable power output month after month. The team was responsive and handled the project with great efficiency.",
   },
   {
-    role: "CEO",
-    company: "REAL ESTATE DEVELOPER",
-    text: "Installing solar across our housing society increased property values and reduced common area electricity bills by over 70%. Excellent ROI.",
+    role: "Mr. Rahul Dorlikar",
+    company: "DHAMORA FACILITY",
+    location: "Dhamora Railway Station, Uttar Pradesh",
+    capacity: "37 kWp",
+    text: "Our 37 kWp plant near Dhamora railway station runs smoothly. Savorka Solar's O&M team ensures peak performance with fast response times whenever needed.",
   },
   {
-    role: "Principal",
-    company: "EDUCATIONAL INSTITUTION",
-    text: "Our school now runs almost entirely on solar energy. The savings go back into education. Savorka's team was professional and completed the project on time.",
+    role: "Mr. Om Chaturvedi",
+    company: "KANNAUJ FACILITY",
+    location: "Near Jasoda Cold Storage, Kannauj, Uttar Pradesh",
+    capacity: "48 kWp",
+    text: "Savorka Solar's solution has helped us cut electricity costs considerably. The 48 kWp system was installed cleanly and the after-sales service has been outstanding.",
+  },
+  {
+    role: "Mr. Vivekananda Ghosh",
+    company: "KATIHAR FACILITY",
+    location: "Near Tingachhiya, Bhorabari, Katihar, Bihar",
+    capacity: "50 kWp",
+    text: "The 50 kWp installation in Katihar has been a game-changer for our facility's energy bills. Professional team, on-time delivery, and great ongoing support.",
+  },
+  {
+    role: "Mr. Nitish Kumar",
+    company: "SAMASTIPUR FACILITY",
+    location: "Khudiram Bose Pusa Railway Station, Samastipur",
+    capacity: "55 kWp",
+    text: "Our 55 kWp rooftop system has been generating consistent savings. Savorka Solar's monitoring system gives us full visibility into the plant's performance.",
+  },
+  {
+    role: "Mr. Vikash Kumar",
+    company: "ADANI AGRI LOGISTICS — DARBHANGA",
+    location: "Village Yogiyara, Block Jale, Darbhanga, Bihar",
+    capacity: "43 kWp",
+    text: "The solar system installed at our Darbhanga facility has been running flawlessly. Excellent workmanship and a highly professional installation team.",
+  },
+  {
+    role: "Mr. Arup Pattanayak",
+    company: "HOOGHLY FACILITY",
+    location: "Bandel Station Road, Near Old Loco Yard, Kolkata",
+    capacity: "59 kWp",
+    text: "Our 59 kWp system near Bandel has delivered impressive results. Energy output has been consistent, and the Savorka team has been very responsive to our needs.",
+  },
+  {
+    role: "Mr. Ramaswamy Gopalan",
+    company: "BENGALURU MALUR FACILITY",
+    location: "Near Malur Rly. Station, Dyapasandra Village, Malur",
+    capacity: "49 kWp",
+    text: "Savorka Solar installed our 49 kWp system near Malur station with precision. The plant has been performing optimally and the O&M team is proactive and professional.",
+  },
+  {
+    role: "Mr. M. Kumar",
+    company: "COIMBATORE FACILITY",
+    location: "Near Madukkarai Rly. Station, Coimbatore, Tamil Nadu",
+    capacity: "46 kWp",
+    text: "The 46 kWp installation at our Coimbatore facility has reduced our power costs significantly. Savorka Solar's team ensured a smooth installation with zero disruption to operations.",
+  },
+  {
+    role: "Mr. Naren",
+    company: "CHENNAI FACILITY",
+    location: "Near Elavur Rly. Stn., Goomidipoondi, Thiruvallur, Tamil Nadu",
+    capacity: "43 kWp",
+    text: "Our 43 kWp solar plant in Thiruvallur has been delivering consistent clean energy. The team at Savorka Solar was professional, timely, and a pleasure to work with.",
   },
 ];
 
-// On desktop: 3 cards per page. On mobile: 1 card per page.
 const DESKTOP_PER_PAGE = 3;
 
-const TestimonialCard = ({ role, company, text }) => (
+const TestimonialCard = ({ role, company, location, capacity, text }) => (
   <div className="rounded-lg overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full">
     <div
       className="px-5 py-3"
@@ -45,10 +105,11 @@ const TestimonialCard = ({ role, company, text }) => (
     >
       <p className="font-bold text-white text-sm">{role}</p>
       <p className="text-green-200 text-xs tracking-widest mt-0.5">{company}</p>
+      <p className="text-green-300 text-xs mt-0.5 opacity-80">{capacity} · {location}</p>
     </div>
     <div className="p-5 flex gap-4 items-start bg-white flex-1">
       <div className="w-10 h-10 rounded-full bg-gray-200 flex-shrink-0 flex items-center justify-center text-gray-500 font-bold text-base">
-        {role.charAt(0)}
+        {role.replace("Mr. ", "").replace("Mr.", "").charAt(0)}
       </div>
       <p className="text-gray-600 text-xs leading-relaxed">{text}</p>
     </div>
@@ -67,7 +128,6 @@ const TestimonialsSection = () => {
     if (newPage < 0 || newPage >= total) return;
     setPage(newPage);
 
-    // Scroll desktop track
     if (desktopTrackRef.current) {
       desktopTrackRef.current.scrollTo({
         left: desktopTrackRef.current.offsetWidth * newPage,
@@ -75,7 +135,6 @@ const TestimonialsSection = () => {
       });
     }
 
-    // Scroll mobile track
     if (mobileTrackRef.current) {
       mobileTrackRef.current.scrollTo({
         left: mobileTrackRef.current.offsetWidth * newPage,
@@ -136,8 +195,7 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* ── PAGINATION ── */}
-        {/* Desktop pagination */}
+        {/* ── DESKTOP PAGINATION ── */}
         <div className="hidden md:flex items-center justify-end gap-3 text-sm text-gray-500">
           <button
             onClick={() => goToPage(page - 1, desktopPages)}
@@ -168,7 +226,7 @@ const TestimonialsSection = () => {
           </button>
         </div>
 
-        {/* Mobile pagination */}
+        {/* ── MOBILE PAGINATION ── */}
         <div className="flex md:hidden items-center justify-center gap-3 text-sm text-gray-500">
           <button
             onClick={() => goToPage(page - 1, mobilePages)}

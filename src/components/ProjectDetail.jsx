@@ -3,6 +3,7 @@ import { useParams, Navigate } from "react-router-dom";
 import BlogCardsRow from "../components/BlogCardsRow";
 import SolarRevolutionSection from "../components/SolarRevolutionSection";
 import projectsData from "../data/projectsData";
+import HeroImageSection from "./HeroImageSection";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -16,13 +17,14 @@ const ProjectDetail = () => {
   return (
     <>
       {/* Hero image */}
-      <div className="w-full overflow-hidden">
+      {/* <div className="w-full overflow-hidden">
         <img
           src={project.heroImage}
           alt={project.title}
           className="w-full h-[220px] sm:h-[260px] md:h-[320px] lg:h-[380px] object-cover"
         />
-      </div>
+      </div> */}
+      <HeroImageSection heroImage={project.heroImage}/>
 
       {/* Heading + paragraph */}
       <section className="bg-white px-5 sm:px-8 lg:px-[100px] py-10 md:py-14">
