@@ -3,9 +3,10 @@ import React from "react";
 import HeroImageSection from "../components/HeroImageSection";
 import SolarSection from "../components/SolarSection";
 // import heroimg from "../assets/abouthero.png";
-import blurimg from "../assets/solarservice.png";
+import blurimg from "../assets/solarservice.jpeg";
 import OurPurposeSection from "../components/OurPurposeSection";
-import bg_all from "../assets/hero_svg.jpg";
+import bg_all from "../assets/hero_svg.png";
+import { BlurImage } from "../pages/ServicesPage";
 
 const AboutHero = () => (
   <div className="w-full bg-white">
@@ -45,7 +46,8 @@ const AboutPage = () => (
     <AboutIntro />
     <SolarSection />
     <OurPurposeSection />
-    <ImageWithBlur src={blurimg} alt="Solar panels on rooftop" />
+    <BlurImage />
+    {/* <ImageWithBlur src={blurimg} alt="Solar panels on rooftop" /> */}
     {/* <section className="px-16 py-12">
       <ContactFormSection />
     </section> */}

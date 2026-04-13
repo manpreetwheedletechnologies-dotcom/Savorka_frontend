@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bg_all from "../assets/hero_svg.jpg";
+import bg_all from "../assets/hero_svg.png";
 
 const HeroImageSection = ({
   title,

@@ -1,10 +1,10 @@
 import hero1 from "../assets/serviceimg1.png";
 // import hero2 from "../assets/services1_hero.svg";
-import mainImg from "../assets/mainImg.jpg";
-import smallImg from "../assets/smallImg.jpg";
+import mainImg from "../assets/mainImg.jpeg";
+import smallImg from "../assets/smallImg.jpeg";
 import ground from "../assets/ground.jpeg"
 import adani from "../assets/andani.jpeg"
-import hero2 from "../assets/hero_svg.jpg"
+import hero2 from "../assets/hero_svg.png"
 import adani_solar from "../assets/adani-solar.webp"
 const projectsData = [
   {

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import solarservices from "../assets/solarservice.png";
+import solarservices from "../assets/solarservice.jpeg";
 import BlogCardsRow from "../components/BlogCardsRow";
 import ContactFormSection from "../components/ContactFormSection";
 import HeroImageSection from "../components/HeroImageSection";

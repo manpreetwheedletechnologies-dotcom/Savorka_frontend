@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect, useRef } from "react";
-import solarservices from "../assets/solarservice.png";
+import solarservices from "../assets/solarservice.jpeg";
 import rishabh from "../assets/rishab.png";
 import arpit from "../assets/Arpit Chaudhary (Sales Director-Residential and C&I).jpeg";
 import priya from "../assets/priya.png";

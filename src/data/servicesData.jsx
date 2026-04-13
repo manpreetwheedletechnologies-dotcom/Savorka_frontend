@@ -1,22 +1,22 @@
 // NOTE: Replace image imports with your actual asset paths.
-import service1 from "../assets/Residential.jpeg";
+import service1 from "../assets/Residential.png";
 import service2 from "../assets/c&I.jpeg";
 import service3 from "../assets/ground.jpeg";
-import service4 from "../assets/Factory (STRUCTURE MANUFACTURING).jpeg";
+import service4 from "../assets/factory.png";
 
-import services1_hero from "../assets/services1_hero.svg";
+import services1_hero from "../assets/services1_hero.jpeg";
 import services2_hero from "../assets/services2_hero.svg";
 import services3_hero from "../assets/services3_hero.svg";
 import services4_hero from "../assets/services4_hero.svg";
 
-import solarMain1 from "../assets/mainImg.jpg";
-import solarSmall1 from "../assets/smallImg.jpg";
-import solarMain2 from "../assets/mainImg.jpg";
-import solarSmall2 from "../assets/smallImg.jpg";
-import solarMain3 from "../assets/mainImg.jpg";
-import solarSmall3 from "../assets/smallImg.jpg";
-import solarMain4 from "../assets/mainImg.jpg";
-import solarSmall4 from "../assets/smallImg.jpg";
+import solarMain1 from "../assets/mainImg.jpeg";
+import solarSmall1 from "../assets/smallImg.jpeg";
+import solarMain2 from "../assets/mainImg.jpeg";
+import solarSmall2 from "../assets/smallImg.jpeg";
+import solarMain3 from "../assets/mainImg.jpeg";
+import solarSmall3 from "../assets/smallImg.jpeg";
+import solarMain4 from "../assets/mainImg.jpeg";
+import solarSmall4 from "../assets/smallImg.jpeg";
 
 const servicesData = [
   // ─────────────────────────────────────────────
@@ -26,7 +26,7 @@ const servicesData = [
     id: 1,
     slug: "residential",
     cardImg: service1,
-    heroImg: services1_hero,
+    heroImg: service1,
     cardTitle: "Residential Solar Solutions",
     cardSubtitle: "Best for Residents",
     cardDesc:
@@ -127,7 +127,7 @@ const servicesData = [
     id: 2,
     slug: "commercial-industrial-solar",
     cardImg: service2,
-    heroImg: services2_hero,
+    heroImg: service2,
     cardTitle: "C&I Solar Solutions",
     cardSubtitle: "Commercial & Industrial",
     cardDesc:
@@ -186,7 +186,7 @@ const servicesData = [
     id: 3,
     slug: "ground-mounted-solar",
     cardImg: service3,
-    heroImg: services3_hero,
+    heroImg: service3,
     cardTitle: "Ground Mounted Solar Projects",
     cardSubtitle: "Large-Scale Energy Generation",
     cardDesc:
@@ -244,7 +244,7 @@ const servicesData = [
     id: 4,
     slug: "solar-structure-manufacturing",
     cardImg: service4,
-    heroImg: services4_hero,
+    heroImg: service4,
     cardTitle: "Solar Structure Manufacturing",
     cardSubtitle: "Strong Foundations for Solar Installations",
     cardDesc:

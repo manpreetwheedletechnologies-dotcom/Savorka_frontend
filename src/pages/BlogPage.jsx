@@ -1,5 +1,5 @@
 import React from "react";
-import solarservices from "../assets/solarservice.png";
+import solarservices from "../assets/solarservice.jpeg";
 // import BlogCardsRow from "../components/BlogCardsRow";
 import { BlurImage } from "../pages/ServicesPage";
 import HeroImageSection from "../components/HeroImageSection";

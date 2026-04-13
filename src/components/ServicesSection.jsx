@@ -1,8 +1,8 @@
 import React from "react";
-import serviceimg1 from "../assets/Residential.jpeg";
+import serviceimg1 from "../assets/Residential.png";
 import serviceimg2 from "../assets/c&I.jpeg";
 import serviceimg3 from "../assets/ground.jpeg";
-import serviceimg4 from "../assets/Factory (STRUCTURE MANUFACTURING).jpeg";
+import serviceimg4 from "../assets/factory.png";
 import bg from "../assets/ser_bg.png"
 import { Link } from "react-router-dom";
 

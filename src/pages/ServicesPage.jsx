@@ -4,7 +4,7 @@ import solarModel from "../assets/savorkarenewable.png";
 import blurimg from "../assets/blurserviceimg.png";
 import HeroImageSection from "../components/HeroImageSection";
 import servicesData from "../data/servicesData";
-import bg_all from "../assets/hero_svg.jpg";
+import bg_all from "../assets/hero_svg.png";
 
 const ServicesPages = () => {
   return (

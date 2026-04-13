@@ -1,7 +1,7 @@
 import React from "react";
-import bigImage from "../assets/aboutimg1.png";
-import smallImage1 from "../assets/aboutimg2.png";
-import smallImage2 from "../assets/aboutimg3.png";
+import bigImage from "../assets/aboutimg_1.png";
+import smallImage1 from "../assets/aboutimg_2.png";
+import smallImage2 from "../assets/aboutimg_3.png";
 import iconEye from "../assets/icon1.png";
 import iconTarget from "../assets/icon2.png";
 import iconHandStar from "../assets/icon3.png";
@@ -22,12 +22,26 @@ const SolarSection = () => (
       <div className="grid grid-cols-1 lg:grid-cols-[1.02fr_0.98fr] items-start gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         {/* LEFT MAIN IMAGE */}
         <div className="w-full order-1">
-          <div className="w-full overflow-hidden rounded-tl-[34px] rounded-br-[34px] rounded-tr-[34px] rounded-bl-[34px] sm:rounded-tl-[46px] sm:rounded-br-[46px] lg:rounded-tl-[58px] lg:rounded-br-[58px]">
-            <img
-              src={bigImage} 
-              alt="Family with solar panels"
-              className="block w-full h-[260px] xs:h-[300px] sm:h-[380px] md:h-[460px] lg:h-[520px] xl:h-[580px] object-cover transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-[1.01]"
-            />
+          <div
+            className="bg-white p-3 sm:p-4 lg:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+    rounded-tl-[110px] rounded-tr-[18px] 
+    rounded-br-[110px] rounded-bl-[18px] 
+    sm:rounded-tl-[150px] sm:rounded-br-[150px] 
+    lg:rounded-tl-[200px] lg:rounded-br-[200px]"
+          >
+            <div
+              className="w-full overflow-hidden 
+      rounded-tl-[95px] rounded-tr-[14px] 
+      rounded-br-[95px] rounded-bl-[14px] 
+      sm:rounded-tl-[130px] sm:rounded-br-[130px] 
+      lg:rounded-tl-[200px] lg:rounded-br-[200px]"
+            >
+              <img
+                src={bigImage}
+                alt="Family with solar panels"
+                className="block w-full h-[260px] xs:h-[300px] sm:h-[380px] md:h-[460px] lg:h-[520px] xl:h-[580px] object-cover transition-all duration-500 ease-out hover:-translate-y-1 hover:scale-[1.01]"
+              />
+            </div>
           </div>
         </div>
 
@@ -35,20 +49,30 @@ const SolarSection = () => (
         <div className="w-full flex flex-col justify-start gap-4 sm:gap-5 md:gap-6 order-2">
           {/* SMALL IMAGES */}
           <div className="grid grid-cols-1 min-[520px]:grid-cols-2 gap-4 sm:gap-5">
-            <div className="group w-full overflow-hidden rounded-[20px] sm:rounded-[24px] lg:rounded-[28px]">
-              <img
-                src={smallImage1}
-                alt="Solar rooftop"
-                className="block w-full h-[180px] sm:h-[210px] md:h-[220px] lg:h-[230px] xl:h-[250px] object-cover object-center transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-[1.03]"
-              />
+            <div className="bg-white p-3 sm:p-4 group rounded-[24px] sm:rounded-[28px] lg:rounded-[32px] shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
+              <div className="w-full overflow-hidden rounded-[18px] sm:rounded-[22px] lg:rounded-[26px]">
+                <img
+                  src={smallImage1}
+                  alt="Solar rooftop"
+                  className="block w-full h-[180px] sm:h-[210px] md:h-[220px] lg:h-[230px] xl:h-[250px] object-cover object-center transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-[1.03]"
+                />
+              </div>
             </div>
 
-            <div className="group w-full overflow-hidden rounded-[20px] sm:rounded-[24px] lg:rounded-[28px]">
-              <img
-                src={smallImage2}
-                alt="Solar field"
-                className="block w-full h-[180px] sm:h-[210px] md:h-[220px] lg:h-[230px] xl:h-[250px] object-cover object-center transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-[1.03]"
-              />
+            <div className="bg-white p-3 sm:p-4 group rounded-[24px] sm:rounded-[28px] lg:rounded-[32px]">
+              <div
+                className="w-full overflow-hidden 
+    rounded-tl-[18px] rounded-tr-[18px] 
+    rounded-bl-[18px] rounded-br-[40px]   /* 👈 increased only bottom-right */
+    sm:rounded-br-[55px] 
+    lg:rounded-br-[70px]"
+              >
+                <img
+                  src={smallImage2}
+                  alt="Solar field"
+                  className="block w-full h-[180px] sm:h-[210px] md:h-[220px] lg:h-[230px] xl:h-[250px] object-cover object-center transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-[1.03]"
+                />
+              </div>
             </div>
           </div>
 
@@ -74,4 +98,4 @@ const SolarSection = () => (
   </section>
 );
 
-export default SolarSection;    
+export default SolarSection;

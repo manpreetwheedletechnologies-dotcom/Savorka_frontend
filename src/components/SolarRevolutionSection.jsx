@@ -1,6 +1,6 @@
 import React from "react";
-import mainImg from "../assets/mainImg.jpg";
-import smallImg from "../assets/smallImg.jpg";
+import mainImg from "../assets/mainImg.jpeg";
+import smallImg from "../assets/smallImg.jpeg";
 
 export default function SolarRevolutionSection({
   titleLine1 = "Join the Solar Revolution",
@@ -121,8 +121,8 @@ export default function SolarRevolutionSection({
 
 
 // import React from "react";
-// import mainImg from "../assets/mainImg.jpg";
-// import smallImg from "../assets/smallImg.jpg";
+// import mainImg from "../assets/mainImg.jpeg";
+// import smallImg from "../assets/smallImg.jpeg";
 
 // const coveragePoints = [
 //   "Evaluation of power load and energy needs",
