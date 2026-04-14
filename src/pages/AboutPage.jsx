@@ -5,7 +5,7 @@ import SolarSection from "../components/SolarSection";
 // import heroimg from "../assets/abouthero.png";
 import blurimg from "../assets/solarservice.jpeg";
 import OurPurposeSection from "../components/OurPurposeSection";
-import bg_all from "../assets/hero_svg.png";
+import bg_all from "../assets/main_h.png";
 import { BlurImage } from "../pages/ServicesPage";
 
 const AboutHero = () => (

@@ -1,11 +1,11 @@
 // NOTE: Replace image imports with your actual asset paths.
-import service1 from "../assets/Residential.png";
+import service1 from "../assets/residential.png";
 import service2 from "../assets/c&I.jpeg";
 import service3 from "../assets/ground.jpeg";
 import service4 from "../assets/factory.png";
 
 import services1_hero from "../assets/services1_hero.jpeg";
-import services2_hero from "../assets/services2_hero.svg";
+import services2_hero from "../assets/services2_hero.svg"
 import services3_hero from "../assets/services3_hero.svg";
 import services4_hero from "../assets/services4_hero.svg";
 

@@ -2,7 +2,7 @@ import React from "react";
 import HeroImageSection from "../components/HeroImageSection";
 import Projects from "../components/Projects";
 import { BlurImage } from "../pages/ServicesPage";
-import bg_all from "../assets/hero_svg.png";
+import bg_all from "../assets/main_h.png";
 
 const ProjectsPage = () => (
   <main>
