@@ -6,7 +6,7 @@ import goGreenImage from "../assets/Gogreenimg.png";
 const STATS = [
   { label: "Capacity (MWp)", value: 150, suffix: "+" },
   { label: "States Served", value: 8, suffix: "+" },
-  { label: "Happy Clients", value: 70, suffix: "+" },
+  { label: "Happy Clients", value: 450, suffix: "+" },
   { label: "Years of Excellence", value: 9, suffix: "+" },
 ];
 
