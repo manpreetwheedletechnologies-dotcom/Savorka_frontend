@@ -10,8 +10,8 @@ import meena from "../assets/meena.png"
 import OND from "../assets/OND Meena.png"
 import nathu from "../assets/nathu.jpeg"
 import Manyapura from "../assets/Manyapura.png" 
-import Rohru from "../assets/Rohru.jpeg"
-import Sainj from "../assets/Sainj.jpeg"
+import Rohru from "../assets/Rohru Shimla 800kW.png"
+import Sainj from "../assets/Sainj Shimla 550 kW.png"
 import Manyapura1 from "../assets/Manyapura1.png"
 import Nathukanagla from "../assets/Nathu ka nagla.png"
 import Jasingpura from "../assets/jaisingpura site .png"
@@ -23,6 +23,7 @@ import trader from '../assets/general traders.jpeg'
 import firozabad_1500 from '../assets/smallImg.jpeg'
 import durges_1500 from '../assets/services1_hero.jpeg'
 import mukul from '../assets/nathu.jpeg'
+import rgi from '../assets/farukhi Glass Industries.jpeg'
 const projectsData = [
   {
     slug: "pm-kusum-c-project-jasingpura",
@@ -450,8 +451,8 @@ const projectsData = [
     slug: "rgi-rise-glass-industries-firozabad",
     title: "RGI Rise Glass Industries – Firozabad | 1500 kW Rooftop Solar Project",
     date: "26 Jul 2024",
-    cardImage: adani_solar,
-    heroImage: adani_solar,
+    cardImage: rgi,
+    heroImage: rgi,
     fullDescription:
       "RGI Rise Glass Industries’ facility in Firozabad is set to harness renewable energy with the installation of a 1,500 kW rooftop solar power plant. This on-grid solar system is designed to deliver consistent, clean electricity while significantly reducing the facility’s carbon footprint and energy costs.The solar panels are installed on a tin shade rooftop structure, carefully engineered for maximum sunlight exposure, durability, and long-term performance. Our team provides a complete turnkey solution, covering design, engineering, supply, installation, and commissioning, ensuring a fully operational and efficient solar energy system.This project reflects RGI Rise Glass Industries’ commitment to sustainability and green energy, demonstrating the practical implementation of renewable solutions in industrial operations.",
 

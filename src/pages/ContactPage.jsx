@@ -11,6 +11,7 @@ import Yash from "../assets/Yash Tripathi (Production Director).jpeg";
 import Sumit from "../assets/Sumit Kumar ( Project Manager).jpeg";
 import Tripti from "../assets/Tripti Yadav (Assistant Project Manager).jpeg";
 import Vanshika from "../assets/Vanshika Rana ( HR & Admin Trainee).jpeg";
+import shivam from "../assets/shivm.jpg"
 import API_BASE_URL from "../config/api";
 
 const initialFormData = {
@@ -58,6 +59,7 @@ const ContactPage = () => {
     { name: "Shivani Tyagi", role: "Accounting Manger", img: sivangi },
     { name: "Yash Tripathi", role: "Production Director", img: Yash },
     { name: "Anil Kumar Pal", role: "Sr. Design Engineer", img: Anil },
+    { name: "Shivam Gautam", role: "Project Manager", img: shivam },
     { name: "Sumit Kumar", role: "Project Manager", img: Sumit },
     { name: "Tripti Yadav", role: "Assistant Project Manager", img: Tripti },
     { name: "Vanshika Rana", role: "HR & Admin Manager", img: Vanshika },
