@@ -25,7 +25,6 @@ import SavorkaBotPopup from "./components/SavorkaBotPopup";
 import ProjectDetail from "./components/ProjectDetail";
 import SavorkaPreloader from "./components/Preloader";
 
-
 function App() {
   const [isBotOpen, setIsBotOpen] = useState(false);
   const [appReady, setAppReady] = useState(false);

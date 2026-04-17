@@ -151,11 +151,11 @@ export default function Projects() {
         /* ────────────────────────────────────────
            IMAGE + ZOOM + OVERLAY
         ──────────────────────────────────────── */
-        .proj-img-wrap {
-          position: relative;
-          overflow: hidden;
-          height: 230px;
-        }
+       .proj-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 290px; /* ← increase this value (try 220px–260px) */
+}
         .proj-img {
           width: 100%;
           height: 100%;
@@ -211,8 +211,8 @@ export default function Projects() {
            CARD BODY
         ──────────────────────────────────────── */
         .proj-card-body {
-          padding: 20px 20px 22px;
-          min-height: 130px;
+  padding: 16px 16px 18px;
+  min-height: 120px; 
           display: flex;
           flex-direction: column;
           justify-content: space-between;

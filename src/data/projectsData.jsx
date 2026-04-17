@@ -21,7 +21,7 @@ import FIROZABAD_GLASS_SHELL from "../assets/FIROZABAD GLASS SHELL.jpeg"
 import rooftop_ferozabad from "../assets/mainImg.jpeg" 
 import trader from '../assets/general traders.jpeg'
 import firozabad_1500 from '../assets/smallImg.jpeg'
-import durges_1500 from '../assets/services1_hero.jpeg'
+import durges_1500 from '../assets/durges_1500.jpeg'
 import mukul from '../assets/nathu.jpeg'
 import rgi from '../assets/farukhi Glass Industries.jpeg'
 const projectsData = [
