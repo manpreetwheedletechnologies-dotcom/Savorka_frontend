@@ -5,10 +5,14 @@ import blurimg from "../assets/blurserviceimg.png";
 import HeroImageSection from "../components/HeroImageSection";
 import servicesData from "../data/servicesData";
 import bg_all from "../assets/main_h.png";
-
+import { Helmet } from "react-helmet-async";
 const ServicesPages = () => {
   return (
     <>
+      <Helmet>
+        <title>Solar Services in India | Installation & Maintenance</title>
+        <meta name="description" content="Explore Savorka’s solar services including panel installation, maintenance & energy solutions for homes and businesses across India." />
+      </Helmet>
       <HeroImageSection title="OUR SERVICES" heroImage={bg_all} />
 
       <section className="bg-white px-5 sm:px-8 lg:px-[100px] py-10 md:py-14">

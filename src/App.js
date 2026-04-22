@@ -24,6 +24,7 @@ import SavorkaBotFloatingButton from "./components/SavorkaBotFloatingButton";
 import SavorkaBotPopup from "./components/SavorkaBotPopup";
 import ProjectDetail from "./components/ProjectDetail";
 import SavorkaPreloader from "./components/Preloader";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   const [isBotOpen, setIsBotOpen] = useState(false);
@@ -31,7 +32,7 @@ function App() {
 
 
   return (
-    <>
+    <HelmetProvider>
       {/* Preloader — shown on first load, calls onComplete when done */}
       {!appReady && (
         <SavorkaPreloader onComplete={() => setAppReady(true)} />
@@ -105,7 +106,7 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </HelmetProvider>
   );
 }
 

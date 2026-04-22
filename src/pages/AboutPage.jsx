@@ -7,6 +7,7 @@ import blurimg from "../assets/solarservice.jpeg";
 import OurPurposeSection from "../components/OurPurposeSection";
 import bg_all from "../assets/main_h.png";
 import { BlurImage } from "../pages/ServicesPage";
+import { Helmet } from "react-helmet-async";
 
 const AboutHero = () => (
   <div className="w-full bg-white">
@@ -28,7 +29,7 @@ const AboutIntro = () => (
       Powering a Greener Tomorrow with Clean Solar Energy.
     </h3>
     <p className="max-w-3xl mx-auto mt-4 text-gray-800 text-base md:text-lg leading-relaxed">
-       We deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
+      We deliver innovative solar solutions that maximize efficiency, reduce energy costs, and support long-term sustainability goals.
     </p>
   </section>
 );
@@ -41,17 +42,24 @@ const ImageWithBlur = ({ src, alt }) => (
 );
 
 const AboutPage = () => (
-  <main>
-    <AboutHero />
-    <AboutIntro />
-    <SolarSection />
-    <OurPurposeSection />
-    <BlurImage />
-    {/* <ImageWithBlur src={blurimg} alt="Solar panels on rooftop" /> */}
-    {/* <section className="px-16 py-12">
+  <>
+    <Helmet>
+      <title>About Savorka | Trusted Solar Energy Company India</title>
+      <meta name="description" content="Learn about Savorka, a leading solar energy company in India delivering innovative solar solutions, expert installation & sustainable energy services." />
+    </Helmet>
+
+    <main>
+      <AboutHero />
+      <AboutIntro />
+      <SolarSection />
+      <OurPurposeSection />
+      <BlurImage />
+      {/* <ImageWithBlur src={blurimg} alt="Solar panels on rooftop" /> */}
+      {/* <section className="px-16 py-12">
       <ContactFormSection />
     </section> */}
-  </main>
+    </main>
+  </>
 );
 
 export default AboutPage;

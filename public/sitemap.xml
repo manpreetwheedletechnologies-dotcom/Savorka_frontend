@@ -2,19 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>http://savorka.in/</loc>
+    <loc>https://www.savorka.in/</loc>
   </url>
 
   <url>
-    <loc>http://savorka.in/service/</loc>
+    <loc>https://www.savorka.in/about</loc>
   </url>
 
   <url>
-    <loc>http://savorka.in/project/</loc>
+    <loc>https://www.savorka.in/contact</loc>
   </url>
 
   <url>
-    <loc>http://savorka.in/contact-us/</loc>
+    <loc>https://www.savorka.in/residential-solar</loc>
+  </url>
+
+  <url>
+    <loc>https://www.savorka.in/commercial-solar</loc>
+  </url>
+
+  <url>
+    <loc>https://www.savorka.in/industrial-solar</loc>
+  </url>
+
+  <url>
+    <loc>https://www.savorka.in/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://www.savorka.in/blog</loc>
   </url>
 
 </urlset>

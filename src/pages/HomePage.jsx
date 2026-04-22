@@ -7,22 +7,29 @@ import ServicesSection from "../components/ServicesSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import ContactFormSection from "../components/ContactFormSection";
 import PopupForm from "../components/PopupForm";
-
+import { Helmet } from "react-helmet-async";
 const HomePage = () => {
   return (
-    <main>
-      <PopupForm />
+    <>
+      <Helmet>
+        <title>Savorka Solar | Solar EPC Company in India | 150+ MWp Installed</title>
+        <meta name="description" content="Savorka Solar delivers On-Grid, Off-Grid & Hybrid solar systems across 8 states. 150+ MWp installed. Residential, commercial & industrial solar solutions." />
+      </Helmet>
 
-      <HeroSection />
-      <GoGreenSection />
-      <WhySolarSection />
-      <AboutSection />
-      <ServicesSection />
-      <TestimonialsSection />
-    <section className="px-16 py-12">
-      {/* <ContactFormSection /> */}
-    </section>
-  </main>
+      <main>
+        <PopupForm />
+
+        <HeroSection />
+        <GoGreenSection />
+        <WhySolarSection />
+        <AboutSection />
+        <ServicesSection />
+        <TestimonialsSection />
+        <section className="px-16 py-12">
+          {/* <ContactFormSection /> */}
+        </section>
+      </main>
+    </>
   );
 };
 

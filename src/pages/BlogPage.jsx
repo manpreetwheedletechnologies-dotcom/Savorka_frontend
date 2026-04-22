@@ -3,7 +3,7 @@ import solarservices from "../assets/solarservice.jpeg";
 // import BlogCardsRow from "../components/BlogCardsRow";
 import { BlurImage } from "../pages/ServicesPage";
 import HeroImageSection from "../components/HeroImageSection";
-
+import { Helmet } from "react-helmet-async";
 
 // const blogRowOne = [
 //   {
@@ -91,6 +91,12 @@ import HeroImageSection from "../components/HeroImageSection";
 
 const BlogPage = () => {
   return (
+    <>
+        <Helmet>
+          <title>Solar Energy Blog | Tips, Trends & Guides | Savorka</title>
+          <meta name="description" content="Read Savorka’s solar blog for expert tips, industry trends, and guides on solar panels, renewable energy & cost-saving solutions." />
+        </Helmet>
+    
     <div className="font-sans bg-white">
       {/* HERO */}
        <HeroImageSection 
@@ -198,6 +204,7 @@ const BlogPage = () => {
 
 <BlurImage />
     </div>
+    </>
   );
 };
 
