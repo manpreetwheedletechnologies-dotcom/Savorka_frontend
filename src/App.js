@@ -26,6 +26,7 @@ import ProjectDetail from "./components/ProjectDetail";
 import SavorkaPreloader from "./components/Preloader";
 import { HelmetProvider } from "react-helmet-async";
 
+
 function App() {
   const [isBotOpen, setIsBotOpen] = useState(false);
   const [appReady, setAppReady] = useState(false);
@@ -77,6 +78,7 @@ function App() {
                         <Route path="/projects" element={<ProjectsPage />} />
                         <Route path="/contact" element={<ContactPage />} />
                         <Route path="/blogs" element={<BlogPage />} />
+                        <Route path="/blog/:slug" element={<BlogDetail />} />
                         <Route path="/gosolar" element={<GoSolar />} />
                         <Route path="/services/:slug" element={<ServiceSinglePage />} />
                         <Route path="/servicesinglepage" element={<ServiceSinglePage />} />
