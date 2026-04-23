@@ -9,7 +9,7 @@ const blogsData = [
     title: "On Grid vs Off-Grid Solar System: Which One Should You Choose?",
 
     shortDescription:
-      "When exploring the choice between an On Grid vs Off-Grid Solar System, it often starts with a simple thought - “Is solar really right for me?” Maybe you’ve noticed rising electricity bills, or perhaps the idea of energy independence has caught your attention. But then comes the confusion: should you go for an On Grid Solar System or an Off-Grid one? You’re not alone in this. It’s a question almost everyone faces at the beginning of their solar journey - and the answer isn’t always straightforward. It depends on how you live, where you live, and what you expect from your system. Let’s walk through it together and make it easier to understand.",
+      "When exploring the choice between an <a class='text-[#117816] hover:underline' href='/blog/on-grid-vs-off-grid-solar-system'>On Grid vs Off-Grid Solar System</a>, it often starts with a simple thought - “Is solar really right for me?” Maybe you’ve noticed rising electricity bills, or perhaps the idea of energy independence has caught your attention. But then comes the confusion: should you go for an On Grid Solar System or an Off-Grid one? You’re not alone in this. It’s a question almost everyone faces at the beginning of their solar journey - and the answer isn’t always straightforward. It depends on how you live, where you live, and what you expect from your system. Let’s walk through it together and make it easier to understand.",
 
     image:
       blog1,
@@ -92,7 +92,7 @@ const blogsData = [
       {
         heading: "Need Help Deciding? ",
         description:
-          "At Savorka Solar, we don’t just install panels, we help you choose what’s right for your home or business. Whether you’re exploring an On Grid Solar System or considering other options, our team will guide you every step of the way. Reach out today and take your first step towards smarter energy. ",
+          "At <a class='text-[#117816] hover:underline' href='/'>Savorka Solar</a>, we don’t just install panels, we help you choose what’s right for your home or business. Whether you’re exploring an On Grid Solar System or considering other options, our team will guide you every step of the way. Reach out today and take your first step towards smarter energy. ",
         
       },
 

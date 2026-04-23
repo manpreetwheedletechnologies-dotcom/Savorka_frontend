@@ -66,10 +66,10 @@ const BlogDetail = () => {
               {blog.title}
             </h1>
 
-            <p className="text-[#4b5563] text-[16px] sm:text-[18px] leading-8 mb-8">
-              {blog.shortDescription}
-            </p>
-
+<p
+  className="text-[#4b5563] text-[16px] sm:text-[18px] leading-8 mb-8"
+  dangerouslySetInnerHTML={{ __html: blog.shortDescription }}
+/>
             {/* Meta */}
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[#6b7280] text-[14px]">
               <span className="inline-flex items-center gap-2">
@@ -132,9 +132,9 @@ const BlogDetail = () => {
 
                   {/* Description */}
                   {section.description && (
-                    <p className="text-[#4b5563] text-[16px] sm:text-[18px] leading-9 whitespace-pre-line">
-                      {section.description}
+                    <p className="text-[#4b5563] text-[16px] sm:text-[18px] leading-9 whitespace-pre-line" dangerouslySetInnerHTML={{ __html: section.description }}>
                     </p>
+                    
                   )}
                 </section>
               ))}
