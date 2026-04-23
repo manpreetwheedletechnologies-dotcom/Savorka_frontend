@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://savorka.in/sitemap.xml
