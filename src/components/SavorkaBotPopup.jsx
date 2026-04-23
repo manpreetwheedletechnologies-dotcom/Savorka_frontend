@@ -590,10 +590,10 @@ const handleConfirmDetails = async () => {
 
       <div
         className={`
-          fixed bottom-4 right-4 z-[9997]
+          fixed bottom-4 left-4 z-[9997]
           w-[calc(100vw-24px)] max-w-[320px]
-          origin-bottom-right transition-all duration-300 ease-out
-          sm:bottom-5 sm:right-5 sm:max-w-[345px]
+          origin-bottom-left transition-all duration-300 ease-out
+          sm:bottom-5 sm:left-5 sm:max-w-[345px]
           ${
             isOpen
               ? "translate-y-0 scale-100 opacity-100"
@@ -1175,10 +1175,10 @@ const handleConfirmDetails = async () => {
 
 //       <div
 //         className={`
-//           fixed bottom-4 right-4 z-[9997]
+//           fixed bottom-4 left-4 z-[9997]
 //           w-[calc(100vw-24px)] max-w-[320px]
-//           origin-bottom-right transition-all duration-300 ease-out
-//           sm:bottom-5 sm:right-5 sm:max-w-[345px]
+//           origin-bottom-left transition-all duration-300 ease-out
+//           sm:bottom-5 sm:left-5 sm:max-w-[345px]
 //           ${
 //             isOpen
 //               ? "translate-y-0 scale-100 opacity-100"
@@ -1189,7 +1189,7 @@ const handleConfirmDetails = async () => {
 //         <div className="overflow-hidden rounded-[22px] border border-white/20 bg-gradient-to-b from-[#DBEC25] to-[#4AA489] shadow-[0_16px_40px_rgba(0,0,0,0.20)]">
 //           {/* Header */}
 //           <div className="relative border-b border-white/15 px-3 pt-3 pb-2">
-//             <div className="absolute right-3 top-3 flex items-center gap-2">
+//             <div className="absolute left-3 top-3 flex items-center gap-2">
 //               <button
 //                 onClick={handleRefresh}
 //                 className="flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-[#222] shadow-sm transition hover:scale-105"

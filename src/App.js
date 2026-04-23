@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop";
@@ -30,7 +30,16 @@ import { HelmetProvider } from "react-helmet-async";
 function App() {
   const [isBotOpen, setIsBotOpen] = useState(false);
   const [appReady, setAppReady] = useState(false);
-
+ useEffect(() => {
+    if (!document.getElementById("wa-widget")) {
+      const script = document.createElement("script");
+      script.src = "https://go2market.ai/v2/WhatsAppWidget/Script/ry66ls";
+      script.id = "wa-widget";
+      script.async = true;
+      script.setAttribute("widget-id", "ry66ls");
+      document.body.appendChild(script);
+    }
+  }, []);
 
   return (
     <HelmetProvider>
