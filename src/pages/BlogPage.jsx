@@ -8,11 +8,41 @@ import { Helmet } from "react-helmet-async";
 const BlogPage = () => {
   return (
     <div className="bg-white">
-      <Helmet>
-        <title>Solar Energy Blog | Tips, Trends & Guides | Savorka</title>
-        <meta name="Read Savorka’s solar blog for expert tips, industry trends, and guides on solar panels, renewable energy & cost-saving solutions." />
-        <link rel="canonical" href="https://www.savorka.in/blogs" />
-      </Helmet>
+import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>Solar Energy Blog | Tips, Trends & Guides | Savorka</title>
+
+  <meta
+    name="description"
+    content="Read Savorka’s solar blog for expert tips, industry trends, and guides on solar panels, renewable energy & cost-saving solutions."
+  />
+
+  <link
+    rel="canonical"
+    href="https://www.savorka.in/blog/"
+  />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Savorka Blog",
+      "url": "https://www.savorka.in/blog/",
+      "description":
+        "Explore the latest blogs on solar energy, rooftop solar systems, ground-mounted solutions, and energy-saving tips by Savorka.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Savorka",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.savorka.in/path-to-logo.png"
+        }
+      },
+      "inLanguage": "en-IN"
+    })}
+  </script>
+</Helmet>
       <HeroImageSection
         title="OUR BLOGS"
         heroImage={solarservices}

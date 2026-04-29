@@ -1,5 +1,6 @@
 import { desc } from "framer-motion/client";
 import blog1 from "../assets/On Grid.png";
+import blog2 from "../assets/ground-mounted-vs-rooftop-solar.jpg"
 const blogsData = [
   {
     id: 1,
@@ -98,7 +99,117 @@ const blogsData = [
 
       
     ]
-  }
+  },
+  {
+  id: 2,
+  slug: "ground-mounted-vs-rooftop-solar-roi",
+  category: "Solar Guide",
+
+  title:
+    "Ground Mounted vs Rooftop Solar: Which Delivers Better ROI for Large Installations?",
+
+  shortDescription:
+    "When comparing <a class='text-[#117816] hover:underline' href='/blog/ground-mounted-vs-rooftop-solar-roi'>Ground Mounted vs Rooftop Solar</a>, the real question is about ROI. For large solar installations in India and MW solar plants, the right choice depends on scalability, efficiency, and long-term value. Here’s a clear breakdown to help you decide which system delivers stronger returns.",
+
+  image: blog2,
+
+  author: "Savorka",
+  date: "29 Apr 2026",
+  readTime: "6 min read",
+
+  content: [
+    {
+      heading: "Two Approaches, One Goal: Maximum Returns",
+      description:
+        "When choosing between ground mounted vs rooftop solar, the goal is simple—maximize energy generation and ROI. Rooftop systems use existing space efficiently, while ground mounted systems are designed for large-scale performance. For large solar installations in India, this difference directly impacts long-term returns."
+    },
+
+    {
+      heading: "Rooftop Solar Systems",
+      description:
+        "Rooftop solar systems utilize unused roof space to generate clean energy. They are practical, cost-effective, and ideal for businesses looking to optimize existing infrastructure without heavy upfront investment."
+    },
+
+    {
+      heading: "Ground Mounted Solar Systems",
+      description:
+        "Ground mounted systems are installed on open land with engineered structures. They are built for scale, precision, and higher performance, making them the preferred choice for MW solar plants."
+    },
+
+    {
+      heading: "Scale That Matches Your Ambition",
+      description:
+        "Rooftop systems are limited by roof size and structural constraints. Ground mounted systems allow expansion, enabling higher energy generation and stronger ROI over time."
+    },
+
+    {
+      heading: "Performance That Drives Profitability",
+      description:
+        "Ground mounted systems allow optimal tilt, spacing, and orientation, ensuring maximum sunlight exposure. Rooftop systems may face shading and design limitations, which can impact efficiency."
+    },
+
+    {
+      heading: "Investment vs Value Creation",
+      description:
+        "Rooftop solar has a lower upfront cost, making it easier to adopt. Ground mounted systems require higher initial investment but deliver greater long-term returns through higher efficiency and scalability."
+    },
+
+    {
+      heading: "Maintenance That Protects Performance",
+      description:
+        "Ground mounted systems are easier to access and maintain, allowing regular cleaning and better performance. Rooftop systems can be harder to manage at scale, especially in industrial setups."
+    },
+
+    {
+      heading: "Space Optimization vs Capacity Expansion",
+      description:
+        "Rooftop solar makes use of existing structures, while ground mounted systems unlock large-scale generation potential where land is available—making them ideal for large installations."
+    },
+
+    {
+      heading: "What Works Best for Large Installations?",
+      subheading: "Ground mounted systems offer:",
+      points: [
+        "Higher generation capacity",
+        "Better operational efficiency",
+        "Easy scalability for future growth",
+        "Stronger long-term ROI"
+      ],
+      description:
+        "For MW solar plants and large industrial use, ground mounted systems consistently outperform rooftop setups due to their flexibility, efficiency, and scalability."
+    },
+
+    {
+      heading: "Final Verdict",
+      subheading: "Here’s the simple takeaway:",
+      points: [
+        "Rooftop Solar: Best for lower investment and faster payback",
+        "Ground Mounted Solar: Best for scale, performance, and long-term ROI"
+      ],
+      description:
+        "If your focus is long-term value and large-scale energy generation, ground mounted solar systems are usually the better investment."
+    },
+
+    {
+      heading: "FAQs",
+      subheading: "1. Which offers better ROI for large installations?",
+      description:
+        "Ground mounted solar systems generally deliver better ROI due to higher efficiency, scalability, and energy output."
+    },
+
+    {
+      heading: "2. Can rooftop solar handle large industrial needs?",
+      description:
+        "Rooftop solar can reduce energy costs significantly, but for very high demand, it is often combined with ground mounted systems."
+    },
+
+    {
+      heading: "3. Why are ground mounted systems used for MW plants?",
+      description:
+        "They allow large-scale deployment, better panel positioning, and consistent performance—making them ideal for MW solar plants."
+    }
+  ]
+}
 ];
 
 export default blogsData;

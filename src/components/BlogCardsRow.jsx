@@ -30,7 +30,7 @@ onClick={() => navigate(`/blog/${blog.slug}`)}
       <img
         src={blog.image}
         alt={blog.title}
-        className="h-[150px] sm:h-[160px] md:h-[170px] w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+        className="h-[150px] sm:h-[160px] md:h-[250px] w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
       />
 
       <div className="bg-white px-4 pt-4 pb-3">
