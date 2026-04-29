@@ -45,10 +45,9 @@ onClick={() => navigate(`/blog/${blog.slug}`)}
           <ArrowIcon />
         </div>
 
-        <p className="mb-4 line-clamp-2 text-[14px] leading-[1.6] text-[#7c8798]">
-          {/* {blog.description} */}
-          {blog.shortDescription}
-        </p>
+        <p className="mb-4 line-clamp-2 text-[14px] leading-[1.6] text-[#7c8798]" dangerouslySetInnerHTML={{ __html: blog.shortDescription }}
+/>
+
 
         <div className="flex items-center gap-2">
           <img

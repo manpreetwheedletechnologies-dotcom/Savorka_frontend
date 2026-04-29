@@ -236,6 +236,7 @@ const ContactPage = () => {
       <Helmet>
         <title>Contact Savorka Solar | Get Solar Consultation Today</title>
         <meta name="description" content="Contact Savorka Solar for expert solar solutions, quotes, and support. Talk to our team and start your journey toward reliable solar energy today." />
+        <link rel="canonical" href="https://www.savorka.in/contact" />
       </Helmet>
 
       <div className="font-sans bg-white">

@@ -46,6 +46,7 @@ const AboutPage = () => (
     <Helmet>
       <title>About Savorka | Trusted Solar Energy Company India</title>
       <meta name="description" content="Learn about Savorka, a leading solar energy company in India delivering innovative solar solutions, expert installation & sustainable energy services." />
+       <link rel="canonical" href="https://www.savorka.in/about" />
     </Helmet>
 
     <main>

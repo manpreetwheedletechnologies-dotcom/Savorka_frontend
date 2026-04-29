@@ -12,6 +12,7 @@ const ServicesPages = () => {
       <Helmet>
         <title>Solar Services in India | Installation & Maintenance</title>
         <meta name="description" content="Explore Savorka’s solar services including panel installation, maintenance & energy solutions for homes and businesses across India." />
+        <link rel="canonical" href="https://www.savorka.in/services" />  
       </Helmet>
       <HeroImageSection title="OUR SERVICES" heroImage={bg_all} />
 

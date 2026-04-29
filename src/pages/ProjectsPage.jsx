@@ -9,6 +9,7 @@ const ProjectsPage = () => (
     <Helmet>
       <title>Solar Projects by Savorka | Case Studies & Installations</title>
       <meta name="description" content="Discover Savorka’s successful solar projects, rooftop installations & case studies showcasing efficient and sustainable energy solutions." />
+      <link rel="canonical" href="https://www.savorka.in/projects" />
     </Helmet>
 
     <main>

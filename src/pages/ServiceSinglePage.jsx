@@ -20,21 +20,25 @@ const SEO_META = {
     title: "Residential Solar Panel Installation | Rooftop Solar for Homes | Savorka Solar",
     description:
       "Power your home with clean energy. Savorka Solar installs On-Grid, Off-Grid & Hybrid rooftop solar systems for homes. Reduce electricity bills by up to 80%. Get a free quote.",
-  },
+    canonical : "https://www.savorka.in/services/residential",
+    },
   "commercial-industrial-solar": {
     title: "Commercial & Industrial Solar Solutions | Rooftop Solar EPC | Savorka Solar",
     description:
       "Cut commercial electricity costs with Savorka Solar's industrial rooftop solar systems. Turnkey EPC, net metering & O&M for factories, warehouses & businesses.",
+      canonical : "https://www.savorka.in/services/commercial-industrial-solar",
   },
   "ground-mounted-solar": {
     title: "Ground Mounted Solar Plant Installation | Utility Scale Solar | Savorka Solar",
     description:
       "Savorka Solar designs and installs ground-mounted solar power plants for large-scale energy needs. Scalable MW-range solutions across India. Request a proposal.",
+      canonical : "https://www.savorka.in/services/ground-mounted-solar",
   },
   "solar-structure-manufacturing": {
     title: "Solar Mounting Structure Manufacturer | GI & MS Structures | Savorka Solar",
     description:
       "In-house solar structure manufacturing for rooftop & ground-mounted solar plants. Hot-dip galvanized GI structures built for durability. Pan-India delivery.",
+      canonical : "https://www.savorka.in/services/solar-structure-manufacturing",
   },
 };
 
@@ -182,6 +186,7 @@ const ServiceSinglePage = () => {
       <Helmet>
         <title>{seoMeta.title}</title>
         <meta name="description" content={seoMeta.description} />
+        <link rel="canonical" href={seoMeta.canonical} />
       </Helmet>
       {/* Hero Image */}
       {/* <div className="w-full overflow-hidden">

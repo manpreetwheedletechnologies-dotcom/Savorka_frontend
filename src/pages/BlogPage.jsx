@@ -3,11 +3,16 @@ import BlogsData from "../data/BlogsData";
 import BlogCardsRow from "../components/BlogCardsRow";
 import HeroImageSection from "../components/HeroImageSection";
 import solarservices from "../assets/solarservice.jpeg";
+import { Helmet } from "react-helmet-async";
 
 const BlogPage = () => {
   return (
     <div className="bg-white">
-
+      <Helmet>
+        <title>Solar Energy Blog | Tips, Trends & Guides | Savorka</title>
+        <meta name="Read Savorka’s solar blog for expert tips, industry trends, and guides on solar panels, renewable energy & cost-saving solutions." />
+        <link rel="canonical" href="https://www.savorka.in/blogs" />
+      </Helmet>
       <HeroImageSection
         title="OUR BLOGS"
         heroImage={solarservices}
