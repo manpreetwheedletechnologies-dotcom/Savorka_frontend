@@ -8,8 +8,6 @@ import { Helmet } from "react-helmet-async";
 const BlogPage = () => {
   return (
     <div className="bg-white">
-import { Helmet } from "react-helmet";
-
 <Helmet>
   <title>Solar Energy Blog | Tips, Trends & Guides | Savorka</title>
 
@@ -20,7 +18,7 @@ import { Helmet } from "react-helmet";
 
   <link
     rel="canonical"
-    href="https://www.savorka.in/blog/"
+    href="https://www.savorka.in/blogs"
   />
 
   <script type="application/ld+json">
@@ -28,7 +26,7 @@ import { Helmet } from "react-helmet";
       "@context": "https://schema.org",
       "@type": "Blog",
       "name": "Savorka Blog",
-      "url": "https://www.savorka.in/blog/",
+      "url": "https://www.savorka.in/blogs",
       "description":
         "Explore the latest blogs on solar energy, rooftop solar systems, ground-mounted solutions, and energy-saving tips by Savorka.",
       "publisher": {
