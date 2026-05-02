@@ -12,6 +12,9 @@ import Sumit from "../assets/Sumit Kumar ( Project Manager).jpeg";
 import Tripti from "../assets/Tripti Yadav (Assistant Project Manager).jpeg";
 import Vanshika from "../assets/Vanshika Rana ( HR & Admin Trainee).jpeg";
 import shivam from "../assets/shivm.jpg"
+import Priyanshu from '../assets/Priyanshu Saxena ( Project Manager).png';
+import Kunal from '../assets/Kunal Thakur (Manager- Operations & IT).png';
+import Priyanka from '../assets/Priyanka Prajapati (Accounts Manager).png';
 import API_BASE_URL from "../config/api";
 import { Helmet } from "react-helmet-async";
 
@@ -57,13 +60,16 @@ const ContactPage = () => {
     { name: "Rishabh Sharma", role: "Managing Director", img: rishabh },
     { name: "Arpit Chaudhary", role: "Sales Director-Residential and C&I", img: arpit },
     { name: "Priya Kaushik", role: "Finance & HR Coordinator", img: priya },
-    { name: "Shivani Tyagi", role: "Accounting Manger", img: sivangi },
+    { name: "Priyanshu Saxena", role: "Project Manager", img: Priyanshu },
+    { name: "Kunal Thakur", role: "Manager- Operations & IT", img: Kunal },
+    { name: "Priyanka Prajapati ", role: "Accounts Manager", img: Priyanka },
     { name: "Yash Tripathi", role: "Production Director", img: Yash },
     { name: "Anil Kumar Pal", role: "Sr. Design Engineer", img: Anil },
     { name: "Shivam Gautam", role: "Project Manager", img: shivam },
     { name: "Sumit Kumar", role: "Project Manager", img: Sumit },
     { name: "Tripti Yadav", role: "Assistant Project Manager", img: Tripti },
     { name: "Vanshika Rana", role: "HR & Admin Manager", img: Vanshika },
+
   ];
 
   const validateField = (name, value) => {

@@ -1,239 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ═══════════════════════════════════════════
-       HOMEPAGE
-  ═══════════════════════════════════════════ -->
+  <!-- Homepage -->
   <url>
     <loc>https://www.savorka.in/</loc>
-    <lastmod>2025-04-23</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════
-       MAIN PAGES (priority 0.8)
-  ═══════════════════════════════════════════ -->
+  <!-- Core Pages -->
   <url>
     <loc>https://www.savorka.in/about</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/services</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/products</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/projects</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.savorka.in/contact</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════
-       SERVICE PAGES (priority 0.8)
-  ═══════════════════════════════════════════ -->
+  <!-- Services -->
   <url>
-    <loc>https://www.savorka.in/services/on-grid-solar-solutions</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.savorka.in/services</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/services/off-grid-solar-solutions</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.savorka.in/services/residential</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/services/hybrid-solar-solutions</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.savorka.in/services/commercial-industrial-solar</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/services/operations-and-maintenance</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.savorka.in/services/ground-mounted-solar</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://www.savorka.in/services/solar-structure-manufacturing</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════
-       PRODUCT PAGES (priority 0.8)
-  ═══════════════════════════════════════════ -->
+  <!-- Projects -->
   <url>
-    <loc>https://www.savorka.in/products/rooftop-solar-plant</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.savorka.in/projects</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/products/solar-water-pump</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/products/solar-street-light</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/products/solar-water-heater</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ═══════════════════════════════════════════
-       SECTOR / INDUSTRY PAGES (priority 0.8)
-  ═══════════════════════════════════════════ -->
-  <url>
-    <loc>https://www.savorka.in/sectors/residential</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/sectors/commercial</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/sectors/industrial</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/sectors/utility-scale</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/sectors/agriculture</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ═══════════════════════════════════════════
-       BLOG / RESOURCES (priority 0.6)
-  ═══════════════════════════════════════════ -->
-  <url>
-    <loc>https://www.savorka.in/blog</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.savorka.in/projects/pm-kusum-c-project-jasingpura</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/blog/what-is-on-grid-solar-system</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.savorka.in/projects/adani-logistics-talaja</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/blog/solar-subsidy-india-2025</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.savorka.in/projects/KCC-OND-Meena-2.232MWp-Ground-Mounted-Solar-Project</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/blog/rooftop-solar-benefits</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.savorka.in/projects/KCC-OND-Nathu-Ka-Nagla-3.084MWp-Ground-Mounted-Solar-Project</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/blog/solar-panel-maintenance-tips</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.savorka.in/projects/KCC-OND-Manyapura-3.024MWp-Ground-Mounted-Solar-Project</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- ═══════════════════════════════════════════
-       OTHER PAGES (priority 0.5)
-  ═══════════════════════════════════════════ -->
+  <!-- Blogs -->
   <url>
-    <loc>https://www.savorka.in/careers</loc>
-    <lastmod>2025-04-23</lastmod>
+    <loc>https://www.savorka.in/blogs</loc>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/gallery</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.savorka.in/blog/on-grid-vs-off-grid-solar-system</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/faq</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/privacy-policy</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://www.savorka.in/terms-and-conditions</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.savorka.in/blog/ground-mounted-vs-rooftop-solar-roi</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
 
 </urlset>
