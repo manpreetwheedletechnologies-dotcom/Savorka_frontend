@@ -24,6 +24,7 @@ import firozabad_1500 from '../assets/smallImg.jpeg'
 import durges_1500 from '../assets/durges_1500.jpeg'
 import mukul from '../assets/nathu.jpeg'
 import rgi from '../assets/farukhi Glass Industries.jpeg'
+import Tauru from '../assets/Adani Logistics - Tauru.jpg'
 const projectsData = [
   {
     slug: "pm-kusum-c-project-jasingpura",
@@ -88,8 +89,8 @@ const projectsData = [
     slug: "adani-logistics-tauru",
     title: "Adani Logistics Ltd – Tauru | 500 kW Rooftop Solar Project",
     date: "16 Dec 2025",
-    cardImage: adani_solar,
-    heroImage: adani_solar,
+    cardImage: Tauru,
+    heroImage: Tauru,
     fullDescription:
       "Adani Logistics Ltd’s facility in Tauru, Haryana is advancing its renewable energy initiatives with the installation of a 500 kW rooftop solar power plant. This on-grid solar system provides reliable electricity, reduces operational energy costs, and lowers the facility’s carbon footprint.The solar panels are mounted on a tin shade rooftop structure, designed for optimal sunlight exposure, durability, and long-term performance. Our team executed a complete turnkey solution, including design, engineering, supply, installation, and commissioning, delivering a fully functional and efficient solar energy system.This project highlights Adani Logistics Ltd’s commitment to sustainable and environmentally responsible logistics operations.",
 
