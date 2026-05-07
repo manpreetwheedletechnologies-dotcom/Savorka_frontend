@@ -1,0 +1,30 @@
+# Savorka Solar
+
+> Savorka Solar is one of India's fastest-growing renewable energy companies, founded in 2016. Headquartered in India and operating across 8 states, Savorka delivers high-performance On-Grid, Off-Grid, and Hybrid solar systems for residential, commercial, industrial, and utility-scale projects. With 150+ MWp of installed capacity, 70+ trusted clients, and in-house solar structure manufacturing capabilities, Savorka provides end-to-end solar services — from engineering and installation to operations & maintenance (O&M).
+
+## About
+
+- [Home](https://www.savorka.in/): Overview of Savorka Solar's capabilities, key stats (150+ MWp, 8 states, 70+ clients), solar system types offered, and approach to long-term energy reliability.
+- [About Us](https://www.savorka.in/about): Company history (founded 2016), mission, engineering philosophy, quality standards, and the team behind Savorka's precision-driven solar installations.
+
+## Services
+
+- [All Services](https://www.savorka.in/services): Full overview of Savorka Solar's service portfolio — from rooftop and ground-mounted solar to structure manufacturing and O&M.
+- [Residential Solar](https://www.savorka.in/services/residential): Cost-effective on-grid and hybrid rooftop solar solutions for homeowners, designed to reduce electricity bills, enable net metering, and deliver long-term ROI.
+- [Commercial & Industrial Solar](https://www.savorka.in/services/commercial-industrial-solar): High-capacity solar systems engineered for commercial buildings, factories, and industrial facilities — optimized for maximum energy yield and operational cost reduction.
+- [Ground Mounted Solar](https://www.savorka.in/services/ground-mounted-solar): Large-scale ground-mounted solar installations for utility-scale and open-land projects, with optimal tilt, orientation, and tracking for maximum generation efficiency.
+- [Solar Structure Manufacturing](https://www.savorka.in/services/solar-structure-manufacturing): In-house manufacturing of durable, precision-engineered solar mounting structures for both rooftop and ground-mounted solar projects across India.
+
+## Blog & Resources
+
+- [Blog](https://www.savorka.in/blogs): Educational articles and guides on solar energy, system types, ROI, and industry insights for homeowners, businesses, and developers.
+- [On-Grid vs Off-Grid Solar System](https://www.savorka.in/blog/on-grid-vs-off-grid-solar-system): A detailed comparison of on-grid (grid-tied) and off-grid solar systems — covering how they work, costs, benefits, and which system suits different energy needs.
+- [Ground Mounted vs Rooftop Solar: ROI](https://www.savorka.in/blog/ground-mounted-vs-rooftop-solar-roi): An analysis comparing the return on investment of ground-mounted and rooftop solar systems, helping clients choose the right installation type for their situation.
+
+## Go Solar
+
+- [Go Solar](https://www.savorka.in/gosolar): Get started with Savorka Solar — request a free consultation, site assessment, and customized solar proposal for your home, business, or industrial facility.
+
+## Contact
+
+- [Contact Us](https://www.savorka.in/contact): Reach Savorka Solar's team for project inquiries, O&M support, partnership opportunities, or general information about solar solutions across India.
