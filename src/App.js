@@ -25,6 +25,7 @@ import SavorkaBotPopup from "./components/SavorkaBotPopup";
 import ProjectDetail from "./components/ProjectDetail";
 import SavorkaPreloader from "./components/Preloader";
 import { HelmetProvider } from "react-helmet-async";
+import NotFoundPage from './components/NotFoundPage';
 
 
 function App() {
@@ -95,6 +96,7 @@ function App() {
                         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
                         <Route path="/projects/:slug" element={<ProjectDetail />} />
+                        <Route path="*" element={<NotFoundPage />} />
                       </Routes>
                     </div>
 
