@@ -18,8 +18,8 @@
 ## Blog & Resources
 
 - [Blog](https://www.savorka.in/blogs): Educational articles and guides on solar energy, system types, ROI, and industry insights for homeowners, businesses, and developers.
-- [On-Grid vs Off-Grid Solar System](https://www.savorka.in/blog/on-grid-vs-off-grid-solar-system): A detailed comparison of on-grid (grid-tied) and off-grid solar systems — covering how they work, costs, benefits, and which system suits different energy needs.
-- [Ground Mounted vs Rooftop Solar: ROI](https://www.savorka.in/blog/ground-mounted-vs-rooftop-solar-roi): An analysis comparing the return on investment of ground-mounted and rooftop solar systems, helping clients choose the right installation type for their situation.
+- [On-Grid vs Off-Grid Solar System](https://www.savorka.in/blogs/on-grid-vs-off-grid-solar-system): A detailed comparison of on-grid (grid-tied) and off-grid solar systems — covering how they work, costs, benefits, and which system suits different energy needs.
+- [Ground Mounted vs Rooftop Solar: ROI](https://www.savorka.in/blogs/ground-mounted-vs-rooftop-solar-roi): An analysis comparing the return on investment of ground-mounted and rooftop solar systems, helping clients choose the right installation type for their situation.
 
 ## Go Solar
 

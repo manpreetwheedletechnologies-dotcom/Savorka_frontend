@@ -112,17 +112,24 @@
   </url>
 
   <url>
-    <loc>https://www.savorka.in/blog/on-grid-vs-off-grid-solar-system</loc>
-    <lastmod>2026-05-01</lastmod>
+    <loc>https://www.savorka.in/blogs/on-grid-vs-off-grid-solar-system</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
 
   <url>
-    <loc>https://www.savorka.in/blog/ground-mounted-vs-rooftop-solar-roi</loc>
-    <lastmod>2026-05-01</lastmod>
+    <loc>https://www.savorka.in/blogs/ground-mounted-vs-rooftop-solar-roi</loc>
+    <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
+  </url>
+
+  <url>
+  <loc>https://www.savorka.in/blogs/solar-subsidy-in-india-2026</loc>
+  <lastmod>2026-05-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.65</priority>
   </url>
 
 </urlset>
