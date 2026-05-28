@@ -11,7 +11,7 @@ const blogsData = [
     title: "On Grid vs Off-Grid Solar System: Which One Should You Choose?",
 
     shortDescription:
-      "When exploring the choice between an <a class='text-[#117816] hover:underline' href='/blog/on-grid-vs-off-grid-solar-system'>On Grid vs Off-Grid Solar System</a>, it often starts with a simple thought - “Is solar really right for me?” Maybe you’ve noticed rising electricity bills, or perhaps the idea of energy independence has caught your attention. But then comes the confusion: should you go for an On Grid Solar System or an Off-Grid one? You’re not alone in this. It’s a question almost everyone faces at the beginning of their solar journey - and the answer isn’t always straightforward. It depends on how you live, where you live, and what you expect from your system. Let’s walk through it together and make it easier to understand.",
+      "When exploring the choice between an <a class='text-[#117816] hover:underline' href='/blogs/on-grid-vs-off-grid-solar-system'>On Grid vs Off-Grid Solar System</a>, it often starts with a simple thought - “Is solar really right for me?” Maybe you’ve noticed rising electricity bills, or perhaps the idea of energy independence has caught your attention. But then comes the confusion: should you go for an On Grid Solar System or an Off-Grid one? You’re not alone in this. It’s a question almost everyone faces at the beginning of their solar journey - and the answer isn’t always straightforward. It depends on how you live, where you live, and what you expect from your system. Let’s walk through it together and make it easier to understand.",
 
     image:
       blog1,
@@ -110,7 +110,7 @@ const blogsData = [
     "Ground Mounted vs Rooftop Solar: Which Delivers Better ROI for Large Installations?",
 
   shortDescription:
-    "When comparing <a class='text-[#117816] hover:underline' href='/blog/ground-mounted-vs-rooftop-solar-roi'>Ground Mounted vs Rooftop Solar</a>, the real question is about ROI. For large solar installations in India and MW solar plants, the right choice depends on scalability, efficiency, and long-term value. Here’s a clear breakdown to help you decide which system delivers stronger returns.",
+    "When comparing <a class='text-[#117816] hover:underline' href='/blogs/ground-mounted-vs-rooftop-solar-roi'>Ground Mounted vs Rooftop Solar</a>, the real question is about ROI. For large solar installations in India and MW solar plants, the right choice depends on scalability, efficiency, and long-term value. Here’s a clear breakdown to help you decide which system delivers stronger returns.",
 
   image: blog2,
 
@@ -220,7 +220,7 @@ const blogsData = [
     "Solar Subsidy in India 2026: State-wise Guide for Homes & Businesses",
 
   shortDescription:
-    "Planning to install rooftop solar but confused about subsidies, state-wise benefits, and actual savings? This guide explains the <a class='text-[#117816] hover:underline' href='/blog/solar-subsidy-india-2026-state-wise-guide'>Solar Subsidy in India 2026</a>, including PM Surya Ghar Yojana benefits, state-wise rooftop solar support, net metering, and how homeowners and businesses can reduce electricity costs with solar energy.",
+    "Planning to install rooftop solar but confused about subsidies, state-wise benefits, and actual savings? This guide explains the <a class='text-[#117816] hover:underline' href='/blogs/solar-subsidy-india-2026-state-wise-guide'>Solar Subsidy in India 2026</a>, including PM Surya Ghar Yojana benefits, state-wise rooftop solar support, net metering, and how homeowners and businesses can reduce electricity costs with solar energy.",
 
   image: blog3,
 
@@ -253,7 +253,7 @@ const blogsData = [
       heading:
         "",
       description:
-        "<a class='text-[#117816] hover:underline' href='/blog/ground-mounted-vs-rooftop-solar-roi'>Read here - Ground Mounted vs Rooftop Solar: Which Delivers Better ROI for Large Installations?</a>"
+        "<a class='text-[#117816] hover:underline' href='/blogs/ground-mounted-vs-rooftop-solar-roi'>Read here - Ground Mounted vs Rooftop Solar: Which Delivers Better ROI for Large Installations?</a>"
     },
 
     {

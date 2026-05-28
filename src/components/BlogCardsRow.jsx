@@ -21,7 +21,7 @@ const BlogCard = ({ blog }) => {
 
   return (
     <article
-      onClick={() => navigate(`/blog/${blog.slug}`)}
+      onClick={() => navigate(`/blogs/${blog.slug}`)}
       className="group w-full max-w-[350px] cursor-pointer overflow-hidden rounded-[2px] border-[12px] border-white bg-white shadow-[0_10px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_18px_38px_rgba(0,0,0,0.14)]"
     >
       <img
