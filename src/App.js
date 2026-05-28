@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop";
@@ -30,8 +30,11 @@ import NotFoundPage from './components/NotFoundPage';
 
 function App() {
   const [isBotOpen, setIsBotOpen] = useState(false);
-  const [appReady, setAppReady] = useState(false);
- useEffect(() => {
+  // const [appReady, setAppReady] = useState(false);
+  const [appReady, setAppReady] = useState(
+    sessionStorage.getItem("preloaderShown") === "true"
+  );
+  useEffect(() => {
     if (!document.getElementById("wa-widget")) {
       const script = document.createElement("script");
       script.src = "https://go2market.ai/v2/WhatsAppWidget/Script/ry66ls";
@@ -46,7 +49,13 @@ function App() {
     <HelmetProvider>
       {/* Preloader — shown on first load, calls onComplete when done */}
       {!appReady && (
-        <SavorkaPreloader onComplete={() => setAppReady(true)} />
+        // <SavorkaPreloader onComplete={() => setAppReady(true)} />
+        <SavorkaPreloader
+          onComplete={() => {
+            sessionStorage.setItem("preloaderShown", "true");
+            setAppReady(true);
+          }}
+        />
       )}
 
       {/* App — fades in after preloader exits */}

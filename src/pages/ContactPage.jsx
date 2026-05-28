@@ -59,7 +59,7 @@ const ContactPage = () => {
   const teamMembers = [
     { name: "Rishabh Sharma", role: "Managing Director", img: rishabh },
     { name: "Arpit Chaudhary", role: "Sales Director-Residential and C&I", img: arpit },
-    { name: "Priya Kaushik", role: "Finance & HR Coordinator", img: priya },
+    { name: "Priya Kaushik", role: "Finance & HR Director", img: priya },
     { name: "Yash Tripathi", role: "Production Director", img: Yash },
     { name: "Kunal Thakur", role: "Manager- Operations & IT", img: Kunal },
     { name: "Priyanka Prajapati ", role: "Accounts Manager", img: Priyanka },

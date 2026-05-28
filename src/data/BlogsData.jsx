@@ -1,6 +1,7 @@
 import { desc } from "framer-motion/client";
 import blog1 from "../assets/On Grid.png";
 import blog2 from "../assets/ground-mounted-vs-rooftop-solar.jpg"
+import blog3 from "../assets/solar-subsidy-in-india.jpeg";
 const blogsData = [
   {
     id: 1,
@@ -207,6 +208,267 @@ const blogsData = [
       heading: "3. Why are ground mounted systems used for MW plants?",
       description:
         "They allow large-scale deployment, better panel positioning, and consistent performance—making them ideal for MW solar plants."
+    }
+  ]
+},
+{
+  id: 3,
+  slug: "solar-subsidy-india-2026-state-wise-guide",
+  category: "Solar Guide",
+
+  title:
+    "Solar Subsidy in India 2026: State-wise Guide for Homes & Businesses",
+
+  shortDescription:
+    "Planning to install rooftop solar but confused about subsidies, state-wise benefits, and actual savings? This guide explains the <a class='text-[#117816] hover:underline' href='/blog/solar-subsidy-india-2026-state-wise-guide'>Solar Subsidy in India 2026</a>, including PM Surya Ghar Yojana benefits, state-wise rooftop solar support, net metering, and how homeowners and businesses can reduce electricity costs with solar energy.",
+
+  image: blog3,
+
+  author: "Savorka",
+  date: "14 May 2026",
+  readTime: "8 min read",
+
+  content: [
+    {
+      heading: "Why More Indians Are Switching to Solar",
+      description:
+        "Solar energy is no longer just an eco-friendly option — it has become a smart financial investment. Rising electricity bills and improved solar technology are encouraging more people to generate their own power through rooftop solar systems."
+    },
+
+    {
+      subheading: "Here’s why solar adoption is growing rapidly across India:",
+      points: [
+        "Significant reduction in monthly electricity bills",
+        "Government subsidy support for residential users",
+        "Protection against rising electricity tariffs",
+        "Low maintenance and long system lifespan",
+        "Eco-friendly and sustainable energy generation",
+        "Increased property value for homes and commercial buildings"
+      ],
+      description:
+        "A properly designed rooftop solar system can provide reliable savings for 25 years or more, making it a long-term energy solution for both homes and businesses."
+    },
+
+    {
+      heading:
+        "",
+      description:
+        "<a class='text-[#117816] hover:underline' href='/blog/ground-mounted-vs-rooftop-solar-roi'>Read here - Ground Mounted vs Rooftop Solar: Which Delivers Better ROI for Large Installations?</a>"
+    },
+
+    {
+      heading: "What is the PM Surya Ghar Yojana?",
+      description:
+        "The PM Surya Ghar: Muft Bijli Yojana is a major rooftop solar initiative launched by the Ministry of New and Renewable Energy (MNRE) to promote solar adoption among residential consumers."
+    },
+
+    {
+      description:
+        "The main aim of this scheme is to help households reduce electricity expenses by making rooftop solar systems more affordable through government subsidies."
+    },
+
+    {
+      description:
+        "Under this scheme, eligible homeowners can receive subsidy benefits based on the size of their rooftop solar installation. The subsidy amount is directly transferred to the consumer’s bank account after successful installation and approval."
+    },
+
+    {
+      heading: "How Much Solar Subsidy Can You Get in 2026?",
+      description:
+        "The subsidy amount depends on the capacity of the rooftop solar system installed at your property."
+    },
+
+    {
+      subheading: "Current central government subsidy benefits include:",
+      points: [
+        "Up to 1 kW solar system: Subsidy of ₹30,000",
+        "Up to 2 kW solar system: Subsidy of ₹60,000",
+        "3 kW and above: Subsidy benefits up to ₹78,000"
+      ],
+      description:
+        "In some cases, combined benefits and local support can help consumers receive total benefits of up to ₹1,08,000."
+    },
+
+    {
+      description:
+        "At <a class='text-[#117816] hover:underline' href='/'>Savorka Solar</a>, our team assists customers throughout the subsidy process, helping ensure smoother approvals and faster implementation."
+    },
+
+    {
+      heading: "State-wise Solar Benefits Across India",
+      description:
+        "Many Indian states are actively supporting rooftop solar adoption through better net metering policies, faster approvals, and improved solar infrastructure."
+    },
+
+    {
+      heading: "Gujarat",
+      points: [
+        "Faster DISCOM approvals",
+        "Strong residential solar adoption",
+        "Excellent net metering support"
+      ]
+    },
+
+    {
+      heading: "Rajasthan",
+      points: [
+        "High solar energy generation potential",
+        "Ideal weather conditions for rooftop solar",
+        "Growing residential and commercial adoption"
+      ]
+    },
+
+    {
+      heading: "Uttar Pradesh",
+      points: [
+        "Expanding rooftop solar initiatives",
+        "Better financing support",
+        "Increasing urban solar adoption"
+      ]
+    },
+
+    {
+      heading: "Haryana",
+      points: [
+        "Supportive rooftop solar policies",
+        "Growing awareness and adoption",
+        "Simplified approval processes"
+      ]
+    },
+
+    {
+      heading: "Maharashtra",
+      points: [
+        "Strong commercial solar growth",
+        "Better long-term electricity savings",
+        "Improved financing options"
+      ]
+    },
+
+    {
+      heading: "Delhi",
+      points: [
+        "Net metering support",
+        "Lower electricity expenses",
+        "Focus on sustainable urban energy solutions"
+      ]
+    },
+
+    {
+      heading: "Why Rooftop Solar Makes Sense for Homeowners",
+      description:
+        "Residential consumers receive the highest direct benefits under the PM Surya Ghar Yojana. Installing rooftop solar can drastically reduce household electricity expenses while also increasing long-term property value."
+    },
+
+    {
+      subheading: "Benefits of residential rooftop solar systems include:",
+      points: [
+        "Subsidy support up to ₹78,000",
+        "Electricity bill savings of up to 70–90%",
+        "Eco-friendly energy generation",
+        "Minimal maintenance costs",
+        "Long operational life of 25+ years"
+      ],
+      description:
+        "At Savorka Solar, we provide customized rooftop solar solutions designed according to your roof structure and energy requirements."
+    },
+
+    {
+      heading: "How Businesses Benefit from Solar Energy",
+      description:
+        "Although direct central subsidies are mainly available for residential consumers, commercial and industrial users still gain major financial advantages through solar adoption."
+    },
+
+    {
+      subheading: "Benefits for businesses include:",
+      points: [
+        "Reduced operational electricity costs",
+        "Higher return on investment",
+        "Protection from increasing energy tariffs",
+        "Better sustainability and ESG compliance",
+        "Improved long-term profitability"
+      ],
+      description:
+        "Commercial solar systems are now widely installed in factories, offices, schools, warehouses, hotels, hospitals, and retail spaces across India."
+    },
+
+    {
+      description:
+        "Savorka offers scalable commercial and industrial solar EPC solutions tailored to businesses of all sizes."
+    },
+
+    {
+      heading: "What is Net Metering?",
+      description:
+        "Net metering is an important rooftop solar feature that allows consumers to export excess electricity generated by their solar system back to the power grid."
+    },
+
+    {
+      description:
+        "The exported units are adjusted against the electricity imported from the grid, helping reduce the final electricity bill. Most Indian states now support net metering for residential and commercial rooftop solar systems."
+    },
+
+    {
+      heading: "Simple Steps to Apply for Solar Subsidy",
+      description:
+        "The solar subsidy process has become easier through the national rooftop solar portal."
+    },
+
+    {
+      subheading: "Step 1: Choose a Trusted Solar Company",
+      description:
+        "Select an experienced provider like Savorka Solar for installation and subsidy support."
+    },
+
+    {
+      subheading: "Step 2: Register for Subsidy",
+      description:
+        "Submit your rooftop solar application through the official portal."
+    },
+
+    {
+      subheading: "Step 3: Technical Approval",
+      description:
+        "The local DISCOM checks the technical feasibility of the installation."
+    },
+
+    {
+      subheading: "Step 4: Solar Installation",
+      description:
+        "The system is installed according to approved standards."
+    },
+
+    {
+      subheading: "Step 5: Inspection and Net Metering",
+      description:
+        "The installed system is inspected and net metering is activated."
+    },
+
+    {
+      subheading: "Step 6: Receive Subsidy Amount",
+      description:
+        "The approved subsidy amount is directly credited to your bank account."
+    },
+
+    {
+      heading: "Why Choose Savorka Solar?",
+      description:
+        "Choosing the right solar partner plays an important role in maximizing savings and ensuring smooth project execution."
+    },
+
+    {
+      subheading: "At Savorka Solar, we provide:",
+      points: [
+        "Residential rooftop solar solutions",
+        "Commercial and industrial solar EPC services",
+        "Customized solar system design",
+        "Subsidy consultation and documentation support",
+        "High-quality solar panels and inverters",
+        "Professional installation and maintenance services",
+        "End-to-end project management"
+      ],
+      description:
+        "Our goal is to help customers adopt clean energy through reliable, efficient, and cost-effective solar solutions."
     }
   ]
 }

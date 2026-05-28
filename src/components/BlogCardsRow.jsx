@@ -1,8 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-// import savorkalogo from "../public/favicon.png";
-
-
+import { useNavigate, useLocation } from "react-router-dom";
 
 const ArrowIcon = () => (
   <svg
@@ -24,9 +21,9 @@ const BlogCard = ({ blog }) => {
 
   return (
     <article
-//  onClick={() => navigate(blog.path)}
-onClick={() => navigate(`/blog/${blog.slug}`)}
- className="group w-full max-w-[350px] cursor-pointer overflow-hidden rounded-[2px] border-[12px] border-white bg-white shadow-[0_10px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_18px_38px_rgba(0,0,0,0.14)]">
+      onClick={() => navigate(`/blog/${blog.slug}`)}
+      className="group w-full max-w-[350px] cursor-pointer overflow-hidden rounded-[2px] border-[12px] border-white bg-white shadow-[0_10px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_18px_38px_rgba(0,0,0,0.14)]"
+    >
       <img
         src={blog.image}
         alt={blog.title}
@@ -45,17 +42,17 @@ onClick={() => navigate(`/blog/${blog.slug}`)}
           <ArrowIcon />
         </div>
 
-        <p className="mb-4 line-clamp-2 text-[14px] leading-[1.6] text-[#7c8798]" dangerouslySetInnerHTML={{ __html: blog.shortDescription }}
-/>
-
+        <p
+          className="mb-4 line-clamp-2 text-[14px] leading-[1.6] text-[#7c8798]"
+          dangerouslySetInnerHTML={{ __html: blog.shortDescription }}
+        />
 
         <div className="flex items-center gap-2">
           <img
-           src="/favicon.png"
-  alt="Author"
+            src="/favicon.png"
+            alt="Author"
             className="h-[32px] w-[32px] rounded-full object-cover"
           />
-
           <div>
             <p className="text-[12px] font-semibold text-[#1f2937]">
               {blog.author}
@@ -69,13 +66,42 @@ onClick={() => navigate(`/blog/${blog.slug}`)}
 };
 
 export default function BlogCardsRow({ blogs = [] }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isGoSolarRoute = location.pathname === "/gosolar";
+  const visibleBlogs = isGoSolarRoute ? blogs.slice(0, 3) : blogs;
+
   return (
     <section className="w-full px-4 sm:px-6 lg:px-12 xl:px-16">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {blogs.map((blog) => (
+        {visibleBlogs.map((blog) => (
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
+
+      {isGoSolarRoute && (
+        <div className="mt-10 flex justify-center">
+          <button
+            onClick={() => navigate("/blogs")}
+            className="group flex items-center gap-2 rounded-[2px] border-2 border-[#4e9b1f] px-6 py-3 text-[14px] font-semibold text-[#4e9b1f] transition-all duration-300 hover:bg-[#4e9b1f] hover:text-white"
+          >
+            View More
+            <svg
+              className="h-[16px] w-[16px] transition-transform duration-300 group-hover:translate-x-1"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      )}
     </section>
   );
 }
