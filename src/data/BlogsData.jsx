@@ -2,6 +2,8 @@ import { desc } from "framer-motion/client";
 import blog1 from "../assets/On Grid.png";
 import blog2 from "../assets/ground-mounted-vs-rooftop-solar.jpg"
 import blog3 from "../assets/solar-subsidy-in-india.jpeg";
+import blog4 from "../assets/Solar EPC Company in India.png"; // add your image
+
 const blogsData = [
   {
     id: 1,
@@ -469,6 +471,151 @@ const blogsData = [
       ],
       description:
         "Our goal is to help customers adopt clean energy through reliable, efficient, and cost-effective solar solutions."
+    }
+  ]
+},
+{
+  id: 4,
+  slug: "how-to-choose-right-solar-epc-company-india",
+  category: "Solar Guide",
+
+  title: "How to Choose the Right Solar EPC Company in India: 7 Things to Check",
+
+  shortDescription:
+    "Choosing the right <a class='text-[#117816] hover:underline' href='/blogs/how-to-choose-right-solar-epc-company-india'>Solar EPC company in India</a> is one of the most important decisions you'll make on your solar journey. With hundreds of providers in the market, how do you separate the reliable from the rest? Whether you're installing a rooftop solar system at home or planning a large commercial project, this guide covers 7 essential things to check before you commit to a solar EPC partner.",
+
+  image: blog4,
+
+  author: "Savorka",
+  date: "22 May 2026",
+  readTime: "8 min read",
+
+  content: [
+    {
+      heading: "Understanding the Role of a Solar EPC Company",
+      description:
+        "A Solar EPC (Engineering, Procurement, and Construction) company is responsible for managing the complete lifecycle of a solar project, from initial assessment to final commissioning. Their scope of work typically includes site inspection, customized system planning, sourcing of panels and inverters, installation, net metering assistance, and long-term maintenance support. An experienced EPC partner ensures your system is designed and executed for reliable performance, operational safety, and maximum energy efficiency over its full lifespan."
+    },
+
+    {
+      heading: "1. Assess the Company's Industry Experience and Project Portfolio",
+      description:
+        "In the solar sector, experience plays a vital role in ensuring technical precision and project reliability. Companies with a proven track record are generally better equipped to manage complex installations, regulatory processes, and execution challenges.",
+      subheading: "Key areas to evaluate:",
+      points: [
+        "Years of experience in the solar industry",
+        "Total installed project capacity",
+        "Diversity of completed projects",
+        "Expertise across residential, commercial, and industrial segments",
+        "Client portfolio and case studies"
+      ]
+    },
+
+    {
+      heading: "2. Evaluate the Quality of Solar Components",
+      description:
+        "The quality of components used directly impacts the performance, durability, and long-term returns of a solar power system. Since solar installations are designed to operate for decades, component selection should be approached with careful consideration.",
+      subheading: "Industry-standard warranty benchmarks to look for:",
+      points: [
+        "Solar modules: up to 25 years performance warranty",
+        "Inverters: typically 5–10 years",
+        "Installation / workmanship: 1–5 years"
+      ]
+    },
+
+    {
+      heading: "3. Verify Certifications and Compliance Standards",
+      description:
+        "A credible Solar EPC company should operate in accordance with recognized quality, safety, and regulatory standards. For commercial and industrial installations, compliance becomes even more critical due to operational and business continuity requirements.",
+      subheading: "Certifications and compliances to review:",
+      points: [
+        "MNRE-related approvals or registrations",
+        "ISO certifications",
+        "BIS-certified products",
+        "Electrical and safety compliance standards"
+      ]
+    },
+
+    {
+      heading: "4. Review Engineering and Design Capabilities",
+      description:
+        "Every site has unique structural and energy requirements. A professional EPC company should offer customized engineering solutions rather than a standardized, one-size-fits-all approach. Robust system design directly influences energy generation output, return on investment, payback period, and system lifespan.",
+      subheading: "A well-qualified EPC partner should:",
+      points: [
+        "Conduct detailed site feasibility assessments",
+        "Analyze shadow-free zones and structural suitability",
+        "Design optimized system layouts",
+        "Provide accurate generation and savings estimates"
+      ]
+    },
+
+    {
+      heading: "5. Evaluate Installation Standards and After-Sales Support",
+      description:
+        "While installation quality is essential, long-term support and service capabilities are equally important in ensuring uninterrupted system performance. Timely issue resolution minimizes downtime and protects overall system productivity.",
+      subheading: "Before finalizing a company, evaluate:",
+      points: [
+        "Availability of AMC (Annual Maintenance Contracts)",
+        "Monitoring and remote diagnostics capabilities",
+        "Response timelines for technical support",
+        "On-site service availability"
+      ]
+    },
+
+    {
+      heading: "6. Compare Pricing with Complete Transparency",
+      description:
+        "Pricing should always be evaluated alongside quality, warranties, and long-term performance expectations. In some cases, lower quotations may exclude important project elements such as net metering support, structural modifications, or additional installation costs. A slightly higher upfront investment often results in stronger long-term financial and operational benefits.",
+      subheading: "Request a detailed proposal including:",
+      points: [
+        "Equipment specifications and brands",
+        "Complete scope of installation",
+        "Warranty coverage",
+        "Taxes and applicable subsidies",
+        "Maintenance and support costs"
+      ]
+    },
+
+    {
+      heading: "7. Review Customer Feedback and Market Reputation",
+      description:
+        "Client testimonials and market reputation provide valuable insights into a company's professionalism, execution quality, and service standards. Where possible, interacting directly with existing customers can offer practical insight into actual energy savings achieved and overall service experience.",
+      subheading: "Sources to review:",
+      points: [
+        "Google reviews and ratings",
+        "Client testimonials on the company website",
+        "Social media presence and engagement",
+        "Completed project showcases and case studies"
+      ]
+    },
+
+    {
+      heading: "Subsidy and Net Metering Assistance",
+      description:
+        "An efficient Solar EPC company should also provide support with government subsidy applications, net metering approvals, and DISCOM coordination. This assistance simplifies the installation process and helps ensure faster project execution, particularly for residential rooftop solar projects under the PM Surya Ghar Yojana.",
+    },
+
+    {
+      heading: "Common Mistakes to Avoid",
+      subheading: "Watch out for these pitfalls when choosing a solar EPC partner:",
+      points: [
+        "Selecting solely on the basis of low pricing — lower costs may indicate compromises in quality or support",
+        "Ignoring post-installation support — reliable after-sales service is essential for long-term performance",
+        "Overlooking project experience — always verify relevant project history at a similar scale",
+        "Not reviewing warranty terms carefully — comprehensive warranties indicate confidence in the product and installation"
+      ]
+    },
+
+    {
+      heading: "Final Thoughts",
+      description:
+        "Selecting the right Solar EPC company in India is a strategic decision that directly influences the efficiency, reliability, and financial performance of your solar power system. As India continues progressing toward a more sustainable energy future, partnering with the right solar company today can deliver measurable economic and environmental benefits for decades to come."
+    },
+
+    {
+      heading: "Why Choose Savorka Solar?",
+      description:
+        "At <a class='text-[#117816] hover:underline' href='/'>Savorka Solar</a>, we bring together technical expertise, quality components, transparent pricing, and end-to-end support to deliver solar solutions that truly perform. Whether you're a homeowner looking to reduce electricity bills or a business planning a large-scale installation, our team guides you every step of the way — from design and installation to subsidies and long-term maintenance."
     }
   ]
 }
